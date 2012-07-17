@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <vote>
+    <date>12/06/2009</date>
+    <nom>Emma</nom>
+    <choix>Bibliothèque-Toddler-Conversation-</choix>
+    <comment>
+    </comment>
+  </vote>
+  <vote>
+    <date>28/06/2009</date>
+    <nom>Jacqueline Perret</nom>
+    <choix>Conversation-</choix>
+    <comment>
+    </comment>
+  </vote>
+  <vote>
+    <date>30/06/2009</date>
+    <nom>Frederique Gateau</nom>
+    <choix>Toddler-</choix>
+    <comment>
+    </comment>
+  </vote>
+</Root>
