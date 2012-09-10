@@ -42,6 +42,13 @@
 <asp:Panel ID="MainText" runat="server">
    <tm:dynamicheading id="Dynamicheading01" text="Contact Us" headingstyle="Cursif" runat="server" />
 
+<p>If you're thinking about enrolling your children at La Marelle, please fill in our </p>
+
+<p align="center"><a href="Registration.aspx#form"><strong>Online enrollment form</strong></a></p>
+
+<p>It doesn't commit you to anything but means that we can respond to your queries more easily by telling us how old your children are and where you live.</p>
+
+
 <p>For any questions, please call us on <strong>07954 585 601</strong>, or fill in the following form :</p>
 
     <table>

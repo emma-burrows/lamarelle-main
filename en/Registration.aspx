@@ -63,12 +63,14 @@
 
       sbBody.Append("<br/><br/><b>Source:</b> " + ddlSource.SelectedValue + " (" + Precisions.Text + ")");
 
+      sbBody.Append("<br/><br/><b>Commentaires:</b> " + txtCommentaires.Text.Replace("\n", "<br/>"));
+
       //Make message
       System.Web.Mail.SmtpMail.SmtpServer = "localhost";
       System.Web.Mail.MailMessage msg = new System.Web.Mail.MailMessage();
       msg.From = "site@lamarelle.org.uk";
-      msg.To = "info@lamarelle.org.uk";
-      msg.Cc = "emma@eburrows.co.uk";
+      msg.To = "hasinaharris1@hotmail.com";
+      msg.Cc = "emma@eburrows.co.uk; secretary@lamarelle.org.uk";
       msg.Subject = "Inscription Marelle - " + txtPrenom.Text + " " + txtNom.Text.ToUpper();
       msg.BodyFormat = System.Web.Mail.MailFormat.Html;
       msg.Body = sbBody.ToString();
@@ -94,57 +96,17 @@
   
 <p>Do you know someone whose children would benefit from this Saturday morning school to improve
   their knowledge of the French-speaking world, and their French reading, writing, and grammar skills, while 
-  enjoying fun activities with little friends their own age? This page explains our admission criteria and fees.</p>
+  enjoying fun activities with little friends their own age?</p>
 
-<h2>Admission Policy</h2>
-  <p>
-    The school takes children between the ages of 2 and 15. Classes are given entirely in French and it is therefore vital that the pupils should understand the language. The school is specifically aimed at children who have at least one French-speaking parent who speaks French to them, or who have recently lived in a French-speaking country for a significant amount of time.</p>
-    <p>The teachers will perform a preliminary interview during the pre-term meeting to determine whether new children have sufficient language skills to attend, and all new admissions will have a trial period of five sessions (half a term). This will show whether La Marelle is the best environment for the child, or whether they might benefit from <a href="FrenchClasses.aspx">a class</a> aimed at English-speaking children.</p>
-    
- <h2>Classes</h2>
-  <p>
-    The 3-hour sessions will be held on 10 Saturday mornings a term in the Fleetdown Primary School in Dartford. <a href="Classes.aspx">Please see the page about our curriculum</a> for more information about what we will be teaching and how the classes are organised.</p>
-    
-        <p>You can see the dates of all our lessons for the upcoming year on <a href="Dates.aspx">our calendar</a>.</p>
-
-    
 <h2>Fees</h2>
-  <p>The fees have been set to cover only our rental, staff and running costs. The fees per term are as follows:</p>
+  <p>The fees have been set to cover only our rental, staff and running costs. An additional <b>£10</b> contribution per pupil towards the cost of supplies is due at the beginning of the school year.</p>
   
-  <p>
-    <table style="width: 435px">
-      <tr>
-        <td style="width: 146px">
-        </td>
-        <td style="width: 100px">
-          <span style="font-family: Arial"><strong>1 child</strong></span></td>
-        <td style="width: 100px">
-          <span style="font-family: Arial"><strong>2 children</strong></span></td>
-        <td style="width: 100px">
-          <span style="font-family: Arial"><strong>3 children or more</strong></span></td>
-      </tr>
-      <tr>
-        <td style="width: 146px">
-          fee/term</td>
-        <td style="width: 100px">
-          £120</td>
-        <td style="width: 100px">
-          £210
-        </td>
-        <td style="width: 100px">
-          £300
-        </td>
-      </tr>
-    </table>
-  </p>
+  <p><a href="Fees.aspx"><b>Please visit our Fees page for further information</b></a></p>
 
-<p>An additional <b>£10</b> contribution per pupil towards the cost of supplies is due at the beginning of the school year.</p>
-
-<p>To secure your child's place, you will need to pay a 50% deposit as soon as possible or six weeks before the start of term. The rest of the fee will be due two weeks before the first day of term. You can find out more about our payment options on our <a href="Fees.aspx">fees page</a>.</p>
- 
+<a name="form"></a>
 <h2>Enrollment</h2>  
   
-  <p>To enrol your children, please fill in the following form and we will be in touch shortly&nbsp;:</p>
+  <p>To enrol your children or get more details, please fill in the following form and we will be in touch shortly&nbsp;:</p>
         <br />
 
       <strong>Your Details:</strong>
@@ -153,9 +115,11 @@
     <table>
       <tr>
         <td style="width: 110px" valign="top">
-          Surname:</td>
+          Family name:</td>
         <td style="width: 301px" valign="top">
-          <asp:TextBox id="txtNom" width="302px" runat="server" /></td>
+          <asp:TextBox id="txtNom" width="302px" runat="server" />
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtNom" runat="server" ErrorMessage="Please entrer your family name"></asp:RequiredFieldValidator>
+        </td>
         <td style="width: 87px" valign="top">
         </td>
       </tr>
@@ -163,7 +127,9 @@
         <td style="width: 110px" valign="top">
           First Name:</td>
         <td style="width: 301px" valign="top">
-          <asp:TextBox id="txtPrenom" style="width: 302px" runat="server" /></td>
+          <asp:TextBox id="txtPrenom" style="width: 302px" runat="server" />
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtPrenom" runat="server" ErrorMessage="Please enter your first name"></asp:RequiredFieldValidator>
+        </td>
         <td style="width: 87px" valign="top">
         </td>
       </tr>
@@ -185,6 +151,7 @@
           <asp:ListItem>daytime</asp:ListItem>
           <asp:ListItem>evenings</asp:ListItem>
         </asp:DropDownList>
+   
         </td>
       </tr>
       <tr>
@@ -292,6 +259,7 @@
     <asp:CheckBoxList ID="cbBilinguisme" runat="server" RepeatColumns="2" Width="621px">
       <asp:ListItem Value="Parent(s) francophone(s)">French-speaking parent(s)</asp:ListItem>
       <asp:ListItem Value="Sejour prolonge dans pays francophone">Prolonged stay in French-speaking country</asp:ListItem>
+      <asp:ListItem Value="Cherche cours FLE">Not native speakers (Seeking French lessons)</asp:ListItem>
     </asp:CheckBoxList><br />
 
   <table>
@@ -340,9 +308,14 @@ How did you hear about La Marelle ?<br />
         <asp:TextBox id="Precisions" style="width: 370px" runat="server" Text="(specify here)"/></td>
     </tr>
 </table>
-  
+<br />
+  <strong>Comments:</strong><br />
+  <asp:TextBox id="txtCommentaires" rows="6" width="100%" runat="server" TextMode="MultiLine"/>
   
   <asp:Button ID="btnEnvoyer" runat="server" OnClick="btnEnvoyer_Click" Text="Send" /><br />
+  <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtNom" runat="server" ErrorMessage="Please entrer your family name"></asp:RequiredFieldValidator>
+  <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txtPrenom" runat="server" ErrorMessage="Please enter your first name"></asp:RequiredFieldValidator>
+
   <br /></asp:Panel>
 
   
