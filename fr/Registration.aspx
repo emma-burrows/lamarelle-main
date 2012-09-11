@@ -62,12 +62,14 @@
 
       sbBody.Append("<br/><br/><b>Source:</b> " + ddlSource.SelectedValue + " (" + Precisions.Text + ")");
 
+      sbBody.Append("<br/><br/><b>Commentaires:</b> " + txtCommentaires.Text.Replace("\n", "<br/>"));
+
       //Make message
       System.Web.Mail.SmtpMail.SmtpServer = "localhost";
       System.Web.Mail.MailMessage msg = new System.Web.Mail.MailMessage();
       msg.From = "site@lamarelle.org.uk";
-      msg.To = "info@lamarelle.org.uk";
-      msg.Cc = "emma@eburrows.co.uk";
+      msg.To = "hasinaharris1@hotmail.com";
+      msg.Cc = "emma@eburrows.co.uk; secretary@lamarelle.org.uk";
       msg.Subject = "Inscription Marelle - " + txtPrenom.Text + " " + txtNom.Text.ToUpper();
       msg.BodyFormat = System.Web.Mail.MailFormat.Html;
       msg.Body = sbBody.ToString();
@@ -93,24 +95,15 @@
   
 <p>Vous êtes intéressé par cette école du samedi matin qui permettra à votre enfant de développer sa connaissance du monde francophone, de maîtriser la langue française et d'améliorer son expression orale tout en participant à des activités ludiques avec des petits copains de son âge ? Voici comment les inscrire.</p>
 
-<h2>Critères d'admission</h2>
-  <p>
-    L'école accueille les enfants de 2 à 15 ans. Les cours auront lieu entièrement en français, et il est donc essentiel que votre enfant comprenne bien le français. L'école s'adresse donc aux enfants qui ont un parent francophone qui leur parle français, ou qui ont récemment effectué un séjour prolongé dans un pays francophone.</p>
-    <p>Un entretien préliminaire, effectué lors de la réunion pré-rentrée, permettra aux enseignants de déterminer si l'enfant a les connaissances linguistiques nécessaires, et chaque nouvel élève admis aura une période d'essai de cinq séances (un demi trimestre). Ceci permettra de déterminer si l'école française de La Marelle est le meilleur environment pour votre enfant, ou s'il s'épanouirait mieux dans <a href="FrenchClasses.aspx">un cours</a> destiné aux enfants anglophones.</p>
-    
- <h2>Cours</h2>
-  <p>
-    Les séances sont de 3 heures, 10 samedi matins par trimestre, et se déroulent à l'école primaire de Fleetdown Primary School à Dartford. <a href="Classes.aspx">Consultez notre page pédagogique</a> pour plus d'information sur l'enseignement proposé et la répartition des classes.</p>
-    
-    <p>Vous pouvez voir les dates exactes des cours pour l'année à venir sur <a href="Dates.aspx">notre calendrier</a>.</p>
-    
 <h2>Tarifs</h2>
   <p>Nos tarifs sont calculés pour couvrir uniquement les frais de fonctionnement, la location des salles et la rémunération des enseignants. Une cotisation fournitures de <b>£10</b> par élève est également due au début de chaque année scolaire.</p>
-<p>Afin de réserver la place de votre enfant, nous vous demandons de payer un acompte de 50% dès que possible. Le solde sera alors dû au plus tard deux semaines avant la rentrée. Voyez notre <a href="Fees.aspx">page sur les tarifs</a> pour plus d'informations concernant les tarifs et les modalités de paiement.</p>
+  
+    <p><a href="Fees.aspx"><b>Veuillez lire nos tarifs pour plus d'informations</b></a></p>
 
+<a name="form"></a>
 <h2>Inscription</h2>  
   
-  <p>Pour inscrire vos enfants, veuillez remplir le questionnaire suivant et nous vous contacterons&nbsp;:</p>
+  <p>Pour inscrire vos enfants our recevoir plus d'informations, veuillez remplir le questionnaire suivant et nous vous contacterons&nbsp;:</p>
         <br />
 
       <strong>Vos coordonnées :</strong>
@@ -119,9 +112,11 @@
     <table width="600">
       <tr>
         <td style="width: 110px" valign="top">
-          Nom :</td>
+          Nom de famille :</td>
         <td style="width: 301px" valign="top">
-          <asp:TextBox id="txtNom" width="302px" runat="server" /></td>
+          <asp:TextBox id="txtNom" width="302px" runat="server" />
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtNom" runat="server" ErrorMessage="Veuillez entrer votre nom de famille"></asp:RequiredFieldValidator>
+        </td>
         <td style="width: 87px" valign="top">
         </td>
       </tr>
@@ -129,7 +124,9 @@
         <td style="width: 110px" valign="top">
           Prénom :</td>
         <td style="width: 301px" valign="top">
-          <asp:TextBox id="txtPrenom" style="width: 302px" runat="server" /></td>
+          <asp:TextBox id="txtPrenom" style="width: 302px" runat="server" />
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtPrenom" runat="server" ErrorMessage="Veuillez entrer votre prénom"></asp:RequiredFieldValidator>
+        </td>
         <td style="width: 87px" valign="top">
         </td>
       </tr>
@@ -261,6 +258,7 @@
     <asp:CheckBoxList ID="cbBilinguisme" runat="server" RepeatColumns="2" Width="621px">
       <asp:ListItem Value="Parent(s) francophone(s)">Parent(s) francophone(s)</asp:ListItem>
       <asp:ListItem Value="Sejour prolonge dans pays francophone">Séjour prolongé dans pays francophone</asp:ListItem>
+      <asp:ListItem Value="Cherche cours FLE">Enfants non-francophones (Français langue étrangère)</asp:ListItem>
     </asp:CheckBoxList><br />
 
   <table>
@@ -309,9 +307,15 @@ Comment avez-vous entendu parler de La Marelle ?<br />
         <asp:TextBox id="Precisions" style="width: 370px" runat="server" Text="(préciser ici)"/></td>
     </tr>
 </table>
+
+<br />
+  <strong>Comments:</strong><br />
+  <asp:TextBox id="txtCommentaires" rows="6" width="100%" runat="server" TextMode="MultiLine"/>
   
   <br />
   <asp:Button ID="btnEnvoyer" runat="server" OnClick="btnEnvoyer_Click" Text="Envoyer" />
+  <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtNom" runat="server" ErrorMessage="Veuillez entrer votre nom de famille"></asp:RequiredFieldValidator>
+  <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txtPrenom" runat="server" ErrorMessage="Veuillez entrer votre prénom"></asp:RequiredFieldValidator>
   <br />
   <br />
 

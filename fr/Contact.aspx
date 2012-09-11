@@ -42,7 +42,13 @@
 <asp:Panel ID="MainText" runat="server">
    <tm:dynamicheading id="Dynamicheading01" text="Contactez-nous" headingstyle="Cursif" runat="server" />
 
-<p>Si vous avez des questions, veuillez nous appeller au <strong>07954 585 601</strong>, ou remplissez le formulaire suivant :</p>
+<p>Si vous songez à inscrire vos enfants à La Marelle, veuillez remplir notre</p>
+
+<p align="center"><a href="Registration.aspx#form"><strong>Fiche d'inscription en ligne</strong></a></p>
+
+<p>La fiche d'inscription n'engage à rien et nous permet de mieux vous répondre en nous donnant les détails des âges de vos enfants et vos coordonnées complètes.</p>
+
+<p>Si vous avez des questions d'ordre général, veuillez nous appeller au <strong>07954 585 601</strong>, ou remplissez le formulaire suivant :</p>
 
     <table>
       <tr>
