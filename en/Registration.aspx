@@ -70,7 +70,7 @@
       System.Web.Mail.MailMessage msg = new System.Web.Mail.MailMessage();
       msg.From = "site@lamarelle.org.uk";
       msg.To = "hasinaharris1@hotmail.com";
-      msg.Cc = "emma@eburrows.co.uk; secretary@lamarelle.org.uk";
+      msg.Cc = "emma@eburrows.co.uk; secretaire.la.marelle.dartford@gmail.com";
       msg.Subject = "Inscription Marelle - " + txtPrenom.Text + " " + txtNom.Text.ToUpper();
       msg.BodyFormat = System.Web.Mail.MailFormat.Html;
       msg.Body = sbBody.ToString();

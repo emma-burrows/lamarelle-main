@@ -20,7 +20,7 @@
       //Make message
       System.Web.Mail.SmtpMail.SmtpServer = "localhost";
       System.Web.Mail.MailMessage msg = new System.Web.Mail.MailMessage();
-      msg.From = "site@lamarelle.org.uk";
+      msg.From = txtEmail.Text;
       msg.To = "hasinaharris1@hotmail.com";
       msg.Cc = "site@lamarelle.org.uk";
       msg.Subject = "Emploi La Marelle - " + txtNom.Text;

@@ -9,8 +9,8 @@
     {
         dsItems.ReadXml(Server.MapPath("/App_Data/Dates.xml"));
 
-        MMC.DataSource = MMC2.DataSource = MMC3.DataSource = MMC4.DataSource = dsItems.Tables[1];
-        MMC.DayField = MMC2.DayField = MMC3.DayField = MMC4.DayField = "StartDate";
+        MMC.DataSource = MMC2.DataSource = MMC3.DataSource = dsItems.Tables[1];
+        MMC.DayField = MMC2.DayField = MMC3.DayField = "StartDate";
     }
 
 </script>
@@ -26,35 +26,7 @@
 
               <br />
               
-         <cal:MultiMonthCalendar runat="server" ID="MMC4" 
-        DayHeaderStyle-Font-Bold="true"
-        meta:resourcekey="Calendar" 
-        BackColor="White" 
-        BorderColor="#663366" 
-        Font-Names="Verdana" 
-        Font-Size="8pt" 
-        ForeColor="Black" CalendarStyle-CellPadding="0" CalendarStyle-GridLines="None" 
-                  CalendarDayNameFormat="Shortest" NumberOfMonths="4" 
-    CalendarsPerRow="4" StartDate="2012-04-21" Title="Spring 2012">
-             <SelectedDayStyle BackColor="White" ForeColor="Gray" Font-Bold="False" />
-        <OtherMonthDayStyle ForeColor="Gray" />
-        <TodayDayStyle BackColor="White" ForeColor="Black" BorderColor="#FF5050" 
-                 BorderStyle="Solid" BorderWidth="1px" Font-Bold="True" />
-        <SelectorStyle BackColor="#9C85BB" />
-        <WeekendDayStyle BackColor="LightSteelBlue" />
-        <NextPrevStyle VerticalAlign="Bottom" />
-        <DayHeaderStyle BackColor="#0099CC" Font-Bold="True" Font-Size="7pt" />
-        <TitleStyle BackColor="#3366CC" BorderColor="Black" Font-Bold="True" 
-                 ForeColor="White" />
-       <DayWithEventsStyle BackColor="#FF6666" BorderColor="#990033" BorderStyle="Solid"
-         BorderWidth="2px" ForeColor="Black" Font-Bold="True" />
-       <CalendarStyle CellPadding="0" Height="150px" Width="150px" />
-       <ControlTitleStyle BackColor="#000099" Font-Bold="True" Font-Names="Arial" Font-Size="Medium"
-         ForeColor="White" />
-     </cal:MultiMonthCalendar>
-
-                  <br />
-              
+             
          <cal:MultiMonthCalendar runat="server" ID="MMC2" 
         DayHeaderStyle-Font-Bold="true"
         meta:resourcekey="Calendar" 

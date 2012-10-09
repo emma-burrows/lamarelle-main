@@ -29,8 +29,17 @@ Founded in 1986, the Petite Ecole in Ealing is one of the oldest French Saturday
 
 
 <p><a href="http://www.petite-ecole-kentoise.co.uk/">Petite Ecole Kentoise</a><br />
-If the Petite Ecole d'Ealing is one of the oldest Saturday schools, the Petite Ecole Kentoise is, with La Marelle, one of the most recent ones. Its ambitious committee already started two schools in 2008, near Maidstone and Tonbridge respectively, and is planning to open a new one in Canterbury in future.
+If the Petite Ecole d'Ealing is one of the oldest Saturday schools, the Petite Ecole Kentoise is, with La Marelle, one of the most recent ones. Its ambitious committee already started two schools in 2008, near Maidstone and Tonbridge respectively.
 </p>
+
+<p><a href="http://www.ecoletricolore.co.uk/">Ecole Tricolore</a><br />
+The new kid on the block, started in Bromley in 2012 to cater for children in South London and Surrey, with the help of some teaching staff from La Marelle.
+</p>
+
+<p><a href="http://internationalacademygreenwich.co.uk/">International Academy of Greenwich</a><br />
+A new free secondary school with a focus on languages, set up by parents in the Greenwich area.
+</p>
+<p></p>
 
 <p></p>
 
