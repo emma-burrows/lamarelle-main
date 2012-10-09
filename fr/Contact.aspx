@@ -19,7 +19,7 @@
       System.Web.Mail.MailMessage msg = new System.Web.Mail.MailMessage();
       msg.From = txtEmail.Text;
       msg.To = "hasinaharris1@hotmail.com";
-      msg.Cc = "emma@eburrows.co.uk";
+      msg.Cc = "emma@eburrows.co.uk; secretaire.la.marelle.dartford@gmail.com";
       msg.Subject = "Contact La Marelle - " + txtNom.Text;
       msg.BodyFormat = System.Web.Mail.MailFormat.Html;
       msg.Body = sbBody.ToString();

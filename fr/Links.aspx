@@ -30,7 +30,15 @@ Créée en 1986, la Petite Ecole d'Ealing est la doyenne des écoles du samedi au R
 
 
 <p><a href="http://www.petite-ecole-kentoise.co.uk/">La Petite Ecole Kentoise</a><br />
-Si la PEE est la plus ancienne des écoles du samedi, la Petite Ecole Kentoise est, avec La Marelle, l'une des écoles françaises du samedi matin les plus récentes. Son comité ambitieux a déjà créé en 2008 deux antennes, proches de Maidstone et Tonbridge respectivement, et espére bientôt en créer une nouvelle à Canterbury.
+Si la PEE est la plus ancienne des écoles du samedi, la Petite Ecole Kentoise est, avec La Marelle, l'une des écoles françaises du samedi matin les plus récentes. Son comité ambitieux a déjà créé en 2008 deux antennes, proches de Maidstone et Tonbridge respectivement.
+</p>
+
+<p><a href="http://www.ecoletricolore.co.uk/">Ecole Tricolore</a><br />
+La petite nouvelle, créée à Bromley pour servir les enfants du sud de Londres et du Surrey, avec la participation d'enseignantes de La Marelle.
+</p>
+
+<p><a href="http://internationalacademygreenwich.co.uk/">International Academy of Greenwich</a><br />
+Une nouvelle école secondaire avec un accent sur les langues, créée par les parents de la région de Greenwich.
 </p>
 
 <p></p>
