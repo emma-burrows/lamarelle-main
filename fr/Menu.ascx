@@ -1,7 +1,17 @@
 <%@ Control Language="C#" ClassName="Menu" %>
 
+        <table class="menu">
+          <tr>
+          <td class="red menu"><a href="http://blog.lamarelle.org.uk">Blog</a></td>
+          <td class="purple menu"><a href="http://blog.lamarelle.org.uk/p/fees.html">Tarifs</a></td>
+          <td class="yellow menu"><a href="Dates.aspx">Dates de cours</a></td>
+          <td class="green menu"><a href="Registration.aspx">Fiche d'inscription</a></td>
+          <td class="red menu"><a href="Contact.aspx">Contactez-nous</a></td>
+          </tr>
+        </table>
 
-           <table border="0" bordercolor="#000040" style="/*background-image: url(../images/Menu-bg.gif); background-repeat:no-repeat*/">
+
+<%--           <table border="0" bordercolor="#000040" style="/*background-image: url(../images/Menu-bg.gif); background-repeat:no-repeat*/">
               <tr>
                 <td class="menu">
                   <a href="Default.aspx" class="menu green">accueil</a></td>
@@ -93,5 +103,5 @@
 <div style="font-size: 8pt; font-family: Arial; text-align: center">
 				Aidez La Marelle - cliquez ci-dessous pour effectuer vos recherches sur Internet:<br />
 				<a href="http://lamarelle.easysearch.org.uk/" target="_blank"><img src="http://www.easyfundraising.org.uk/images/user-banners/es/120x110/logo.gif"></a>
-</div>
+</div>--%>
 <!-- EASYSEARCH BANNER 120x110 END -->

@@ -1,49 +1,43 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/masterpage.master" Title="La Marelle - école pour enfants bilingues à Dartford" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Default.aspx.cs" Inherits="en_Default"  MasterPageFile="~/masterpage.master" Title="La Marelle - French school for bilingual children Dartford"%>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MenuPlaceHolder" runat="server">
-
 
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
+  <table width="100%">
+    <tr>
+    <td colspan="2" >
 
-<b><asp:Label ID="labResult" runat="server" />
-  <asp:ObjectDataSource ID="odsNews" runat="server" 
-    OldValuesParameterFormatString="original_{0}" SelectMethod="GetTop5News" 
-    TypeName="NewsDataObject"></asp:ObjectDataSource>
-  </b>
-
-  <asp:Panel width="100%" ID="MainText" runat="server">
-    <table width="100%">
-      <tr>
-        <td colspan="2">
-          <p align="center"><tm:dynamicheading id="Dynamicheading5" text="Apprendre ²est ²un ²jeu ²d'enfant. " headingstyle="Cursif" runat="server" /></p>
-          <p>La Marelle est une école et un centre communautaire français située à Dartford dans le nord-ouest du Kent. Nous proposons des activités et cours en français le samedi matin.</p>
+    <div class="cursif" style="text-align: center;">Apprendre est un jeu d'enfant</div> 
+          <p>La Marelle est une école et un centre communautaire français située à <a href="https://maps.google.co.uk/?q=Fleetdown+Primary+School+DA2+6JX" title="Voir notre position sur Google Maps">Dartford dans le nord-ouest du Kent</a>. Nous proposons des activités et cours en français le samedi matin.</p>
         </td>
       </tr>
     </table>
 
+    <h1>Dernières nouvelles</h1>
     <table width="100%" cellpadding="0">
       <tr>
         <td>
-          <asp:Repeater ID="FormView1" runat="server" DataSourceID="odsNews">
+          <asp:Repeater ID="FormView1" runat="server">
             <ItemTemplate>
-              <table  style="background-color: #eedcdc; padding: 10px">
+              <table class="yellow" style="padding: 10px" width="100%">
                 <tr>
                   <td>
-                    <h3><asp:Label ID="FrenchTitleLabel" runat="server" Text='<%# Bind("FrenchTitle") %>' /></h3>
-                    <asp:Label ID="FrenchLabel" runat="server" Text='<%# Bind("French") %>' />
+                    <h1><asp:Hyperlink NavigateUrl='<%# Bind("URL") %>' ID="FrenchTitleLabel" runat="server" Text='<%# Bind("Title") %>' /></h1>
+                    <asp:Literal ID="FrenchLabel" runat="server" Text='<%# Bind("Description") %>' />
                   </td>
                 </tr>
               </table>
             </ItemTemplate>
             <AlternatingItemTemplate>
-              <table  style="background-color: #dcdcee; padding: 10px">
+              <table class="blue" style="padding: 10px" width="100%">
                 <tr>
                   <td>
-                    <h3><asp:Label ID="FrenchTitleLabel" runat="server" Text='<%# Bind("FrenchTitle") %>' /></h3>
-                    <asp:Label ID="FrenchLabel" runat="server" Text='<%# Bind("French") %>' />
+                    <h1><asp:Hyperlink NavigateUrl='<%# Bind("URL") %>' ID="FrenchTitleLabel" runat="server" Text='<%# Bind("Title") %>' /></h1>
+                    <asp:Label ID="FrenchLabel" runat="server" Text='<%# Bind("Description") %>' />
                   </td>
                 </tr>
               </table>
@@ -51,7 +45,11 @@
           </asp:Repeater>
         </td>
       </tr>
-      
+    </table>
+
+    <h1>Nos Cours et Services</h1>
+    <table width="100%" cellpadding="0">
+ 
       <!-- Static information -->
       <tr>
         <td width="100%" colspan="2"  valign="top" border="1"  style="background-color: #dcdcee; padding: 10px" >
@@ -88,7 +86,7 @@
           <ul>
           <li>Groupe parents-bébés: prenez un café et discutez avec nos parents francophones pendant que vos enfants de 0 à 2 ans jouent avec leurs petits camarades. (contribution: £1/famille)</li>
           <li>Café pour les adultes avec accès Internet</li>
-          <li>Médiathèque (deuxième trimestre 2011)</li>
+          <li>Médiathèque</li>
           </ul>
           <p align="center">
             <a href="FrenchClasses.aspx#location">Passez nous voir un samedi matin!</a>
@@ -104,6 +102,8 @@
           <a href="http://francoforum.xooit.co.uk"><img src="../images/francoforum.jpg" width="200px" height="60px"/></a><br />Rencontrez d'autres francophones dans le Kent grâce au <a href="http://francoforum.xooit.co.uk">Francoforum</a>.
         </td>
       </tr>
-    </table>
-  </asp:Panel>
+</table>
+
+<br />
+
 </asp:Content>

@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="en_Default2"  MasterPageFile="~/masterpage.master" Title="La Marelle - French school for bilingual children Dartford"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="en_Default"  MasterPageFile="~/masterpage.master" Title="La Marelle - French school for bilingual children Dartford"%>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MenuPlaceHolder" runat="server">
@@ -7,53 +7,50 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<b><asp:Label ID="labResult" runat="server" />
-  <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" 
-    DataObjectTypeName="News" DeleteMethod="DeleteMessage" 
-    InsertMethod="InsertContact" OldValuesParameterFormatString="original_{0}" 
-    SelectMethod="GetTop5News" TypeName="NewsDataObject" 
-    UpdateMethod="UpdateContact"></asp:ObjectDataSource>
-  </b>
-
-<asp:Panel width="100%" ID="MainText" runat="server">
-
-    <table width="100%">
+  <table width="100%">
     <tr>
     <td colspan="2" >
 
-      <p align="center"><tm:dynamicheading id="Dynamicheading5" text="Apprendre ²est ²un ²jeu ²d'enfant. " headingstyle="Cursif" runat="server" /></p>
-      <p>La Marelle is a French school and community centre based in Dartford in North-West Kent. We offer French-language lessons and activities on Saturday mornings:</p></td>
-    </tr>
+    <div class="cursif" style="text-align: center;">Apprendre est un jeu d'enfant</div> 
+    <p>La Marelle is a French school and community centre based in <a href="https://maps.google.co.uk/?q=Fleetdown+Primary+School+DA2+6JX" title="View our exact location on Google Maps">Dartford in North-West Kent</a>. We offer French-language lessons and activities on Saturday mornings:</p></td>
+  </tr>
+  </table>
+   
+    <h1>Latest News</h1>
+    <table width="100%" cellpadding="0">
+      <tr>
+        <td>
+          <asp:Repeater ID="FormView1" runat="server">
+            <ItemTemplate>
+              <table class="yellow" style="padding: 10px" width="100%">
+                <tr>
+                  <td>
+                    <h1><asp:Hyperlink NavigateUrl='<%# Bind("URL") %>' ID="FrenchTitleLabel" runat="server" Text='<%# Bind("Title") %>' /></h1>
+                    <asp:Literal ID="FrenchLabel" runat="server" Text='<%# Bind("Description") %>' />
+                  </td>
+                </tr>
+              </table>
+            </ItemTemplate>
+            <AlternatingItemTemplate>
+              <table class="blue" style="padding: 10px" width="100%">
+                <tr>
+                  <td>
+                    <h1><asp:Hyperlink NavigateUrl='<%# Bind("URL") %>' ID="FrenchTitleLabel" runat="server" Text='<%# Bind("Title") %>' /></h1>
+                    <asp:Label ID="FrenchLabel" runat="server" Text='<%# Bind("Description") %>' />
+                  </td>
+                </tr>
+              </table>
+            </AlternatingItemTemplate>
+          </asp:Repeater>
+        </td>
+      </tr>
     </table>
-    
-   <table width="100%" cellpadding="0">
-    <tr>
-    <td>
-    <asp:Repeater ID="FormView1" runat="server" DataSourceID="ObjectDataSource1">
-      <ItemTemplate>
-        <table  style="background-color: #eedcdc; padding: 10px">
-          <tr>
-            <td>
-              <h3><asp:Label ID="EnglishTitleLabel" runat="server" Text='<%# Bind("EnglishTitle") %>' /></h3>
-              <asp:Label ID="EnglishLabel" runat="server" Text='<%# Bind("English") %>' />
-            </td>
-          </tr>
-        </table>
-      </ItemTemplate>
-      <AlternatingItemTemplate>
-        <table  style="background-color: #dcdcee; padding: 10px">
-          <tr>
-            <td>
-              <h3><asp:Label ID="EnglishTitleLabel" runat="server" Text='<%# Bind("EnglishTitle") %>' /></h3>
-              <asp:Label ID="EnglishLabel" runat="server" Text='<%# Bind("English") %>' />
-            </td>
-          </tr>
-        </table>
-      </AlternatingItemTemplate>
-    </asp:Repeater>
-    </td>
-    </tr>
-    <tr>
+
+    <h1>Our Lessons and Services</h1>
+    <table width="100%" cellpadding="0">
+ 
+      <!-- Static information -->
+     <tr>
       <td border="1" colspan="2" style="background-color: #dcdcee; padding: 10px" 
         valign="top">
         <img align="baseline" alt="Frog" height="50px" src="../images/frog.png" 
@@ -124,6 +121,5 @@
 </table>
 
 <br />
-</asp:Panel>
 
 </asp:Content>

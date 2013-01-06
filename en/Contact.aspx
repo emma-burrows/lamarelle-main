@@ -40,7 +40,7 @@
 <b><asp:Label ID="labResult" runat="server" /></b>
  
 <asp:Panel ID="MainText" runat="server">
-   <tm:dynamicheading id="Dynamicheading01" text="Contact Us" headingstyle="Cursif" runat="server" />
+   <h1>Contact Us</h1>
 
 <p>If you're thinking about enrolling your children at La Marelle, please fill in our </p>
 

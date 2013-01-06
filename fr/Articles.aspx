@@ -14,6 +14,8 @@
 <table width="100%">
 <tr>
 <td>
+<p><a href="http://www.gravesendreporter.co.uk/news/making_sure_les_enfants_are_fluent_in_french_1_1714280">Making sure les enfants are fluent in French</a>, Gravesend and Dartford Reporter, 29 November 2012</p>
+
 <p><a href="http://www.lepetitjournal.com/societe-londres/59625-education-lessor-des-petites-ecoles-francais-langue-maternelle-du-samedi-matin.html">EDUCATION – L’essor des petites écoles Français Langue Maternelle du samedi matin</a>, Le Petit Journal, 10 April 2009</p>
 
 <p><a href="http://www.lepetitjournal.com/content/view/42190/2363/">EDUCATION – Le samedi, à la Marelle, c’est l’école en français </a>, Le Petit Journal, 10 juin 2009</p>
