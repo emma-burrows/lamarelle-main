@@ -1,0 +1,160 @@
+<%@ Master Language="C#" %>
+<%@ register assembly="TrunkMedia.DynamicHeadings" namespace="TrunkMedia.DynamicHeadings.Controls" tagprefix="tm" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+  protected void Page_Load(object sender, EventArgs e)
+  {
+    Control MenuUserControl;
+    string Lang = "en";
+
+    
+    //Check for the LaMarelleLang cookie which can override this
+    if (Request.Cookies["LaMarelleLang"] == null)
+    {
+
+        //Check default language set in the browser
+        if (Request.UserLanguages != null)
+        {
+          Lang = Request.UserLanguages[0].Substring(0, 2);
+        }
+        
+      if (Lang == "fr")
+        Response.Cookies["LaMarelleLang"].Value = "fr";
+      else
+        Response.Cookies["LaMarelleLang"].Value = "en";
+
+      Response.Cookies["LaMarelleLang"].Expires = DateTime.Now.AddDays(45);
+
+    }
+    else
+    {
+      if (Request.Cookies["LaMarelleLang"].Value == "fr" || Request.Cookies["LaMarelleLang"].Value == "en")
+        Lang = Request.Cookies["LaMarelleLang"].Value;
+
+      //check for language cookie and set the menu
+      if (Request.Url.AbsolutePath.StartsWith("/fr/") || Request.Url.AbsolutePath.StartsWith("/pefd/fr/"))
+      {
+        Lang = "fr";
+      }
+      else
+      {
+        Lang = "en";
+      }
+    }
+    
+    MenuUserControl = LoadControl("~/" + Lang + "/Menu.ascx");
+
+    // Set culture info for dates and automatic text
+    string cultureLang = "en-GB";
+    if (Lang == "fr")
+      cultureLang = "fr-FR";
+      
+    System.Threading.Thread.CurrentThread.CurrentCulture =
+                       new System.Globalization.CultureInfo(cultureLang);
+
+    MenuPlaceHolder.Controls.Add(MenuUserControl);
+
+  }
+
+  
+  protected void lkFrench_Click(object sender, EventArgs e)
+  {
+    Response.Cookies["LaMarelleLang"].Value = "fr";
+    Response.Cookies["LaMarelleLang"].Expires = DateTime.Now.AddDays(15);
+
+    Response.Redirect(Request.FilePath.Replace("/en/", "/fr/"));
+  }
+
+  protected void lkEnglish_Click(object sender, EventArgs e)
+  {
+    Response.Cookies["LaMarelleLang"].Value = "en";
+    Response.Cookies["LaMarelleLang"].Expires = DateTime.Now.AddDays(15);
+
+    Response.Redirect(Request.FilePath.Replace("/fr/", "/en/"));
+  }
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>La Marelle - Petite école française de Dartford</title>
+
+<script type="text/javascript" src="/images/swfobject.js"></script>
+<!-- Google Analytics code below -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-15567157-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<link href="css/Menu.css" rel="Stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Domine|Lobster+Two|Sacramento' rel='stylesheet' type='text/css'/>
+</head>
+<body bgcolor="#000040" height="100%">
+    <form id="form1" height="100%" runat="server">
+      <table width="902" style="border: solid 1px navy;  background-color: AliceBlue; height: 100%;" align="center">
+        <tr>
+           <td colspan="4" valign="top">
+            <div id="bannerdiv" style="width: 902px; height: 122px; position: relative;">
+            
+            <div style="left: 1px; position: absolute;"><a href="http://www.lamarelle.org.uk"><asp:image ImageUrl="Banner.png" id="banner" AlternateText="La Marelle - French school in Dartford" runat="server"/></a></div>
+                
+                <div align="center" style="width: 70px; left: 10px; position: absolute; top: 102px">
+                <asp:ImageButton id="lkFrench" ImageUrl="~/france.gif" runat="server" CssClass="Menu1" 
+                OnClick="lkFrench_Click" /> 
+                <asp:ImageButton ID="lkEnglish" ImageUrl="~/unitedkingdom.gif" runat="server" CssClass="Menu1" 
+                OnClick="lkEnglish_Click" />
+                </div>
+            </div>
+</td>
+        </tr>
+        
+        <tr>
+        <td colspan="2">
+           <asp:ContentPlaceHolder id="MenuPlaceHolder" runat="server"></asp:ContentPlaceHolder>
+        </td>
+        </tr>
+        
+        <tr>
+
+   <!-- START CONTENT -->
+          <td colspan="1" align="left" style="width: 750px; border: 1px;" valign="top">
+          
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+        
+    </td>
+    <td width="150px" valign="top">
+    <!-- Facebook Badge START -->
+    <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLa-Marelle%2F112289512183777&amp;width=180&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=580" scrolling="no" frameborder="0" style="color: #CCFFFF; background-color: #ADD6FF; width:180px; height:585px;" allowTransparency="true"></iframe>
+        
+        <a href="http://www.twitter.com/LaMarelleUK"><img border="0" src="http://twitter-badges.s3.amazonaws.com/twitter-c.png" alt="S'abonner à LaMarelleUK sur Twitter"/></a>
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="LaMarelleUK">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		<img src="/images/groupeassis.JPG" width="125px"/><br/><br/>
+		<img src="/images/classes/090516-Chenilles2.jpg" width="125px"/><br/><br/>
+		<img src="/images/Classes/2010/coccinelles.jpg" width="125px"/><br/><br/>
+		<!--img src="/images/Bastille/bbq11.jpg" width="125px"/><br/><br/>
+		<img src="/images/HStoate/VG-Chenilles.jpg" width="125px"/><br/><br/>
+		<img src="/images/Bastille/peche%20aux%20canards.jpg" width="125px"/><br/><br/>
+		<img src="/images/Bastille/prix.jpg" width="125px"/></td-->
+       
+        </tr>
+        
+        <tr>
+          <td colspan="3"><font size="2">(c) 2008-2011 by La Marelle. Registered UK charity number 1135186. Icons from <a href="http://jacorre.com">jacorre.com</a>. Website hosted by <a href="http://www.csnewmedia.co.uk">CS New Media</a>, design by <a href="http://www.eburrows.co.uk">E Burrows</a>.</font>
+            </td>
+        </tr>
+      </table>
+    </form>
+</body>
+</html>
