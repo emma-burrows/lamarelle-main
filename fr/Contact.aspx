@@ -42,13 +42,13 @@
 <asp:Panel ID="MainText" runat="server">
    <h1>Contactez-nous</h1>
 
-<p>Si vous songez à inscrire vos enfants à La Marelle, veuillez remplir notre</p>
+<p>Si vous pensez inscrire vos enfants à La Marelle, veuillez remplir notre</p>
 
 <p align="center"><a href="Registration.aspx#form"><strong>Fiche d'inscription en ligne</strong></a></p>
 
 <p>La fiche d'inscription n'engage à rien et nous permet de mieux vous répondre en nous donnant les détails des âges de vos enfants et vos coordonnées complètes.</p>
 
-<p>Si vous avez des questions d'ordre général, veuillez nous appeller au <strong>07954 585 601</strong>, ou remplissez le formulaire suivant :</p>
+<p>Si vous avez des questions d'ordre général, veuillez remplir le formulaire suivant :</p>
 
     <table>
       <tr>
@@ -82,8 +82,8 @@
 </asp:Panel>
 
 <p>Vous pouvez également nous écrire au 5 Eynsford Road, Greenhithe DA9 9HB.</p>
-<p>Cette adresse est uniquement pour le courrier de La Marelle - les leçons et les journées d'inscription ont lieu à Fleetdown Primary 
-School à Dartford (<a href="Classes.aspx"> voir la section pédagogique</a>) et nos autres activités auront lieu à l'endroit indiqué sur leur page web.</p>
+<p>Cette adresse est uniquement pour le courrier de La Marelle - les leçons et les journées d'inscription ont lieu à <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
+            title="Voir notre situation géographique sur Google Maps">Fleetdown Primary School</a> à Dartford et nos autres activités auront lieu à l'endroit indiqué sur leur page web.</p>
 
 </asp:Content>
 

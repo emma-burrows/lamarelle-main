@@ -5,8 +5,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
-   <tm:dynamicheading id="Dynamicheading01" text="Ecole ²pour ²enfants francophones" headingstyle="Cursif" runat="server" />
-   <p>Cette page concerne l'école pour enfants francophones. Veuillez voir notre page <a href="FrenchClasses.aspx">sur les cours de français language étrangère</a> si vous cherchez à apprendre le français.</p>
+   <h1>École pour enfants francophones</h1>
+   <p>Cette page concerne l'école pour enfants francophones. Veuillez voir notre page <a href="FrenchClasses.aspx">sur les cours de français language étrangère</a> si vous cherchez à apprendre le français. Sauf indication contraire, tous les cours ont lieu à <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
+            title="Voir notre situation géographique sur Google Maps">Fleetdown Primary School</a></p>
    
       <h2>Programme pédagogique</h2>
       <p>Les élèves sont répartis en 7 classes : quatre classes pour les élèves de maternelle, en dessous de 5 ans, et trois pour les élèves du primaire, à partir de 5 ans.</p>
@@ -53,13 +54,13 @@
   <tr><td><img src="../images/Bumblebee.png" height="100" width="100" /></td>
   <td>  <h3>Bourdons - 5 ans</h3>
   
-  <p>Enseignante : Sophie Boisseaux</p>
+  <p>Enseignante : Janick Jacob</p>
 </td>
   </tr>
   <tr><td><img src="../images/Caterpillar.png" height="100" width="100" /></td>
   <td>  <h3>Chenilles - 6 ans</h3>
   
-  <p>Enseignante : Bénédicte Facques</p>
+  <p>Enseignante : Camille del Strother</p>
 </td>
 </tr>
 </table>
@@ -75,7 +76,7 @@
   <tr><td><img src="../images/Butterfly.png" height="100" width="100" /></td>
   <td>  <h3>Papillons - 7 à 8 ans</h3>
   
-  <p>Enseignante : Tahiry Russell</p>
+  <p>Enseignante : Sophie Boisseaux</p>
 </td>
 </tr>
 </table>
@@ -89,15 +90,21 @@
   
     <table border="0">
   <tr><td><img src="../images/Dragonfly.png" height="100" width="100" /></td>
-  <td>  <h3>Libellules - 9 à 15 ans</h3>
+  <td>  <h3>Libellules - 9 à 12 ans</h3>
   
-  <p>Enseignantes : Leaty Metton et Severine Clarke</p>
+  <p>Enseignante : Gwladys Dupont</p>
+</td>
+</tr>
+  <tr><td><img src="../images/Dragonfly.png" height="100" width="100" /></td>
+  <td>  <h3>Lucioles - 12 à 15 ans</h3>
+  
+  <p>Enseignante : Séverine Clarke</p>
 </td>
 </tr>
 </table>
 
   <p>L'expression orale sera encore développée, et les élèves consolideront leur maîtrise des règles de base de la grammaire française grâce aux exercices de grammaire, conjugaison et orthographe. L'étude d'œuvres complètes
-        enrichira le vocabulaire et l'expression écrite de l'élève, et la créativité de leur expression sera encouragée. La deuxième partie de la session est consacrée à la préparation à l'examen de GCSE, également ouverte aux élèves anglophones qui préparent cet examen.</p>
+        enrichira le vocabulaire et l'expression écrite de l'élève, et la créativité de leur expression sera encouragée. La deuxième partie de la session des Lucioles est consacrée à la préparation à l'examen de GCSE, également ouverte aux élèves anglophones qui préparent cet examen.</p>
 
   <p>
       Dans tous ces niveaux, des éléments de l'histoire, de la géographie et de la culture
@@ -106,21 +113,6 @@
     </p>
 
 
-   <h2>Emplacement des cours</h2>
-  <p>
-      Les cours et les journées d'inscription ont lieu à l'adresse suivante (<b>Cette adresse ne doit pas être utilisée pour nous contacter !</b>) :</p>
-      
-      <p>Fleetdown Primary School<br />
-      Lunedale Road<br />
-      Dartford DA2 6JX</p>
-      
-      <p>
-                <a href="http://www.streetmap.co.uk/map.srf?x=556198&y=172987&z=110&sv=556198,172987&st=4&ar=y&mapp=map.srf&searchp=ids.srf&dn=825&ax=556198&ay=172987&lm=0">
-        <img src="../images/Plan-Fleetdown.png" style="width: 358px; height: 303px" /></a></p>
-      
-
-  <p>
-    &nbsp;</p>
 
 
 

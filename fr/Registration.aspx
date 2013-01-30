@@ -87,23 +87,17 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<b><asp:Label ID="labResult" runat="server" /></b>
+  <b><asp:Label ID="labResult" runat="server" /></b>
  
 <asp:Panel width="100%" ID="MainText" runat="server">
    
-   <tm:dynamicheading id="Dynamicheading01" text="Inscriptions" headingstyle="Cursif" runat="server" />
+   <h1>Inscriptions</h1>
   
-<p>Vous êtes intéressé par cette école du samedi matin qui permettra à votre enfant de développer sa connaissance du monde francophone, de maîtriser la langue française et d'améliorer son expression orale tout en participant à des activités ludiques avec des petits copains de son âge ? Voici comment les inscrire.</p>
-
-<h2>Tarifs</h2>
-  <p>Nos tarifs sont calculés pour couvrir uniquement les frais de fonctionnement, la location des salles et la rémunération des enseignants. Une cotisation fournitures de <b>£10</b> par élève est également due au début de chaque année scolaire.</p>
-  
-    <p><a href="Fees.aspx"><b>Veuillez lire nos tarifs pour plus d'informations</b></a></p>
-
 <a name="form"></a>
-<h2>Inscription</h2>  
-  
-  <p>Pour inscrire vos enfants our recevoir plus d'informations, veuillez remplir le questionnaire suivant et nous vous contacterons&nbsp;:</p>
+
+
+  <p>Pour inscrire vos enfants ou recevoir plus d&#39;informations, veuillez remplir le 
+    questionnaire suivant et nous vous contacterons rapidement&nbsp;:</p>
         <br />
 
       <strong>Vos coordonnées :</strong>
@@ -165,7 +159,11 @@
       <tr>
         <td style="width: 110px" valign="top">Email :</td>
         <td style="width: 301px" valign="top">
-          <asp:TextBox id="txtEmail" width="302px" runat="server" /></td>
+          <asp:TextBox id="txtEmail" width="302px" runat="server" />
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" 
+            ControlToValidate="txtEmail" 
+            ErrorMessage="Veuillez entrer une adresse couriel pour que nous puissions vous joindre."></asp:RequiredFieldValidator>
+        </td>
         <td style="width: 87px" valign="top">
         </td>
       </tr>
@@ -314,8 +312,7 @@ Comment avez-vous entendu parler de La Marelle ?<br />
   
   <br />
   <asp:Button ID="btnEnvoyer" runat="server" OnClick="btnEnvoyer_Click" Text="Envoyer" />
-  <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtNom" runat="server" ErrorMessage="Veuillez entrer votre nom de famille"></asp:RequiredFieldValidator>
-  <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txtPrenom" runat="server" ErrorMessage="Veuillez entrer votre prénom"></asp:RequiredFieldValidator>
+   <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
   <br />
   <br />
 

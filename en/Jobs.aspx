@@ -58,12 +58,21 @@
 <b><asp:Label ID="labResult" runat="server" /></b>
  
 <asp:Panel ID="MainText" runat="server">
-   <tm:dynamicheading id="Dynamicheading01" text="La Marelle Job Offers" headingstyle="Cursif" runat="server" />
+   <h1>La Marelle Jobs</h1>
 
-<h2>French-speaking teachers and assistants</h2>
-<p>La Marelle is currently seeking teachers and assistants whose mother tongue is French, to teach pre-school and primary school classes. Lessons take place on Saturday mornings in the Dartford, in North-West Kent (40 minutes from London by train).</p> 
+<h2>French-speaking teachers, assistants and volunteers</h2>
+<p>La Marelle is a busy, thriving charity and we are always looking for new people to help us
+achieve our aims. In particular, we welcome applications from:</p>
+
+<ul>
+  <li>Teachers and assistants whose mother tongue is French</li>
+  <li>Volunteers to help with administrative work like advertising and fundraising</li>
+</ul>
+
+<p>All positions are based at <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
+            title="View our exact location on Google Maps">Fleetdown Primary School</a> in Datford, North-West Kent (40 minutes from central London). We give lessons on 30 Saturday mornings a year.</p>
  <p>
-For further information, please call us on <b>07954 585 601</b> or send your CV (Word or PDF only) and cover letter in French using the following form:</p>
+For further information, please send us your CV (Word or PDF only) and cover letter in French using the following form:</p>
 
     <table>
       <tr>

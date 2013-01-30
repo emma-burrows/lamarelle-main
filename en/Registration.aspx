@@ -88,25 +88,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<b><asp:Label ID="labResult" runat="server" /></b>
+  <b><asp:Label ID="labResult" runat="server" /></b>
  
 <asp:Panel width="100%" ID="MainText" runat="server">
    
-   <tm:dynamicheading id="Dynamicheading01" text="Enrolment" headingstyle="Cursif" runat="server" />
+   <h1>Enrolment form</h1>
   
-<p>Do you know someone whose children would benefit from this Saturday morning school to improve
-  their knowledge of the French-speaking world, and their French reading, writing, and grammar skills, while 
-  enjoying fun activities with little friends their own age?</p>
-
-<h2>Fees</h2>
-  <p>The fees have been set to cover only our rental, staff and running costs. An additional <b>£10</b> contribution per pupil towards the cost of supplies is due at the beginning of the school year.</p>
-  
-  <p><a href="Fees.aspx"><b>Please visit our Fees page for further information</b></a></p>
-
 <a name="form"></a>
-<h2>Enrollment</h2>  
   
-  <p>To enrol your children or get more details, please fill in the following form and we will be in touch shortly&nbsp;:</p>
+  <p>To enrol your children or get more details, please fill in the following form 
+    and we will be in touch by email as soon as possible:</p>
         <br />
 
       <strong>Your Details:</strong>
@@ -118,7 +109,7 @@
           Family name:</td>
         <td style="width: 301px" valign="top">
           <asp:TextBox id="txtNom" width="302px" runat="server" />
-          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtNom" runat="server" ErrorMessage="Please entrer your family name"></asp:RequiredFieldValidator>
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtNom" runat="server" ErrorMessage="Please enter your family name"></asp:RequiredFieldValidator>
         </td>
         <td style="width: 87px" valign="top">
         </td>
@@ -169,7 +160,10 @@
       <tr>
         <td style="width: 110px" valign="top">Email:</td>
         <td style="width: 301px" valign="top">
-          <asp:TextBox id="txtEmail" width="302px" runat="server" /></td>
+          <asp:TextBox id="txtEmail" width="302px" runat="server" />
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtEmail"
+            ErrorMessage="Please enter an email address so we can contact you."></asp:RequiredFieldValidator>
+        </td>
         <td style="width: 87px" valign="top">
         </td>
       </tr>
@@ -313,8 +307,7 @@ How did you hear about La Marelle ?<br />
   <asp:TextBox id="txtCommentaires" rows="6" width="100%" runat="server" TextMode="MultiLine"/>
   
   <asp:Button ID="btnEnvoyer" runat="server" OnClick="btnEnvoyer_Click" Text="Send" /><br />
-  <asp:RequiredFieldValidator ID="RequiredFieldValidator3" ControlToValidate="txtNom" runat="server" ErrorMessage="Please entrer your family name"></asp:RequiredFieldValidator>
-  <asp:RequiredFieldValidator ID="RequiredFieldValidator4" ControlToValidate="txtPrenom" runat="server" ErrorMessage="Please enter your first name"></asp:RequiredFieldValidator>
+  <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
 
   <br /></asp:Panel>
 
