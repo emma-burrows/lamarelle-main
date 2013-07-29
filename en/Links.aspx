@@ -9,7 +9,7 @@
 <b><asp:Label ID="labResult" runat="server" /></b>
  
 <asp:Panel ID="MainText" runat="server">
-   <tm:dynamicheading id="Dynamicheading01" text="Friends and partners" headingstyle="Cursif" runat="server" />
+   <h1>Friends and partners</h1>
 
 <p><a href="http://planecoleroyaumeuni.blogspot.com/">Plan Ecole of the French Embassy</a><br />
 The French Embassy's "School Plan" aims to develop the teaching of the French language and culture in the United Kingdom. Amongst other things, it plans to aid the creation of bilingual classes in British schools, and to federate complementary schools like La Marelle.
@@ -38,6 +38,10 @@ The new kid on the block, started in Bromley in 2012 to cater for children in So
 
 <p><a href="http://internationalacademygreenwich.co.uk/">International Academy of Greenwich</a><br />
 A new free secondary school with a focus on languages, set up by parents in the Greenwich area.
+</p>
+
+<p><a href="http://www.maskarade.net/">Maskarade Languages</a><br />
+Teaching resources to learn French aimed at children.
 </p>
 <p></p>
 

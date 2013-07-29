@@ -9,7 +9,7 @@
 <b><asp:Label ID="labResult" runat="server" /></b>
  
 <asp:Panel ID="MainText" runat="server">
-   <tm:dynamicheading id="Dynamicheading01" text="Nos amis et partenaires" headingstyle="Cursif" runat="server" />
+   <h1>Nos amis et partenaires</h1>
 
 <p><a href="http://planecoleroyaumeuni.blogspot.com/">Le Plan Ecole de l'Ambassade de France</a><br />
 Ce projet de l'Ambassade de France vise à développer l'offre d'enseignement de la
@@ -41,6 +41,9 @@ La petite nouvelle, créée à Bromley pour servir les enfants du sud de Londres et
 Une nouvelle école secondaire avec un accent sur les langues, créée par les parents de la région de Greenwich.
 </p>
 
+<p><a href="http://www.maskarade.net/">Maskarade Languages</a><br />
+Apprenez le français avec Maskarade Languages. Pour les enfants de la maternelle à la primaire, un apprentissage du français (FLE) ludique et motivant! 
+</p>
 <p></p>
 
 </asp:Panel>

@@ -9,7 +9,7 @@
 <b><asp:Label ID="labResult" runat="server" /></b>
  
 <asp:Panel ID="MainText" runat="server">
-   <tm:dynamicheading id="Dynamicheading01" text="Articles about La Marelle" headingstyle="Cursif" runat="server" />
+   <h1>Articles about La Marelle</h1>
 
 <table width="100%">
 <tr>

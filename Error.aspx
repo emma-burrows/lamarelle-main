@@ -26,7 +26,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MenuPlaceHolder" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-<tm:dynamicheading id="Dynamicheading01" text="Error - Erreur" headingstyle="Cursif" runat="server" />
+<h1>Error - Erreur</h1>
 
 <p>A problem has occurred with the page you requested. Either there is an error on the page, or the page does not exist. If this error persists, please use our <a href="en/charity.aspx">Contact page</a> to tell us which page you were trying to view.</p>
 
