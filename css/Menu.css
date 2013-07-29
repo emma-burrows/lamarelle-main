@@ -7,7 +7,7 @@ BODY
 
 #banner
 {
-  background-image: url("Banner.png");
+  background-image: url("/Banner.png");
   background-repeat: no-repeat;
   width: 900px; /*or your image's width*/
   height: 120px; /*or your image's height*/
@@ -174,4 +174,16 @@ img, #banner.box
   padding: 0px;
   border: none;
   margin-bottom: 10px;
+}
+
+.tr-caption
+{
+  padding-bottom: 10px;
+  font-family:sans-serif;
+  font-weight:bold;
+}
+
+label 
+{
+  display: inline;
 }
