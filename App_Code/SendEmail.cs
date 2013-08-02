@@ -26,7 +26,7 @@ public static class  SendEmail
   {
     String message;
     String servername = HttpContext.Current.Request.Url.Host;
-    String lang = HttpContext.Current.Request.Path.Substring(1, 2);
+    String lang = Utils.getLanguage();
 
     try
     {
@@ -38,7 +38,7 @@ public static class  SendEmail
       msg.From = new System.Net.Mail.MailAddress(email);
 
       // Change mail recipients depending on whether this the test server or the live one
-      if (servername == "lamarelle.org.uk")
+      if (servername == "lamarelle.org.uk" || servername == "www.lamarelle.org.uk")
       {
         msg.To.Add(WebConfigurationManager.AppSettings["DefaultMailRecipient"]);
         msg.CC.Add(WebConfigurationManager.AppSettings["OtherMailRecipients"]);
