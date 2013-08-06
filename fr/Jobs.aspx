@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/masterpage.master" Title="La Marelle - Emplois" %>
+Ôªø<%@ Page Language="C#" MasterPageFile="~/masterpage.master" Title="La Marelle - Emplois" %>
 
 
 <script runat="server">
@@ -33,14 +33,14 @@
             CVUpload.SaveAs(Server.MapPath("../_files") + "\\" + CVUpload.FileName);
             System.Web.Mail.MailAttachment ma = new System.Web.Mail.MailAttachment(Server.MapPath("../_files") + "\\" + CVUpload.FileName);
             msg.Attachments.Add(ma);
-            labResult.Text = "Merci pour votre message et votre CV. Nous vous contacterons bientÙt.";
+            labResult.Text = "Merci pour votre message et votre CV. Nous vous contacterons bient√¥t.";
         }
         catch (Exception ex)
         {
           labResult.Text = "ERREUR: " + ex.Message.ToString();
         }
       else
-        labResult.Text = "Merci pour votre message. Nous vous contacterons bientÙt.";
+        labResult.Text = "Merci pour votre message. Nous vous contacterons bient√¥t.";
         
         
       //Send message
@@ -58,22 +58,22 @@
 <b><asp:Label ID="labResult" runat="server" /></b>
  
 <asp:Panel ID="MainText" runat="server">
-   <h1>Emplois ‡ La Marelle</h1>
+   <h1>Emplois √† La Marelle</h1>
 
-<h2>Enseignants, assistants et bÈnÈvoles francophones</h2>
+<h2>Enseignants, assistants et b√©n√©voles francophones</h2>
 <p>La Marelle est une association qui grandit et nous recherchons toujours de nouveaux collaborateurs
-pour organiser nos activitÈs, comme par exemple:</p>
+pour organiser nos activit√©s, comme par exemple:</p>
 
 <ul>
-  <li>Enseignants et assistant(e)s de langue maternelle franÁaise</li>
-  <li>BÈnÈvoles pour les t‚ches administratives comme la publicitÈ et les levÈes de fonds</li>
+  <li>Enseignants et assistant(e)s de langue maternelle fran√ßaise</li>
+  <li>B√©n√©voles pour les t√¢ches administratives comme la publicit√© et les lev√©es de fonds</li>
 </ul>
 
-<p>Les cours ont lieu les samedi matins ‡ <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="Voir notre situation gÈographique sur Google Maps">Fleetdown Primary School</a> ‡ Dartford dans le nord-ouest du Kent (‡ 40 minutes de Londres par train). 
+<p>Les cours ont lieu les samedi matins √† <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
+            title="Voir notre situation g√©ographique sur Google Maps">Fleetdown Primary School</a> √† Dartford dans le nord-ouest du Kent (√† 40 minutes de Londres par train). 
 Nous faisons cours 30 samedi par an.</p> 
  <p>
-Pour plus d'information, veuillez nous envoyer un CV (format Word ou PDF seulement) avec lettre de motivation en franÁais en utilisant le formulaire ci-dessous:</p>
+Pour plus d'information, veuillez nous envoyer un CV (format Word ou PDF seulement) avec lettre de motivation en fran√ßais en utilisant le formulaire ci-dessous:</p>
 
     <table>
       <tr>

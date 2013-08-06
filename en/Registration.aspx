@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Registration.aspx.cs" Inherits="en_Registration" MasterPageFile="~/masterpage.master" Title="La Marelle - Enrollment form" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Registration.aspx.cs" Inherits="en_Registration" MasterPageFile="~/masterpage.master" Title="La Marelle - Enrollment form" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 

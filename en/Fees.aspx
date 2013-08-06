@@ -1,4 +1,4 @@
-<%@ Page Language="C#" MasterPageFile="~/masterpage.master" Title="La Marelle - Inscriptions" %>
+ï»¿<%@ Page Language="C#" MasterPageFile="~/masterpage.master" Title="La Marelle - Inscriptions" %>
 
 <script runat="server">
 
@@ -11,12 +11,12 @@
 
    <p>
      If you subsequently enrol them, we will ask you to pay for the remaining 
-     sessions in the term, as well as the £10 supplies contribution due by all pupils 
+     sessions in the term, as well as the Â£10 supplies contribution due by all pupils 
      each school year. Other small fees for library books or snacks may be due 
      depending on the classes the children are in.</p>
 
 <h2>Yearly supplies contribution</h2>
-<p>A £10 contribution per pupil is due on first registration and at the beginning of each school year. This covers the purchase of some of the extra supplies needed when a child joins a new class.</p>
+<p>A Â£10 contribution per pupil is due on first registration and at the beginning of each school year. This covers the purchase of some of the extra supplies needed when a child joins a new class.</p>
 <br />
 <h2>
 School fees</h2>
@@ -38,45 +38,37 @@ Three-hour lessons</h3>
       </tr>
 <tr>
         <td style="height: 20px; width: 146px;">per <b>term</b> (10 lessons)</td>
-        <td style="height: 20px; width: 150px;">£130</td>
-        <td style="height: 20px; width: 150px;">£230
+        <td style="height: 20px; width: 150px;">Â£130</td>
+        <td style="height: 20px; width: 150px;">Â£230
         </td>
-        <td style="height: 20px; width: 150px;">£300
+        <td style="height: 20px; width: 150px;">Â£300
         </td>
       </tr>
 <tr>
         <td style="height: 20px; width: 146px;">per <b>year</b></td>
-        <td style="height: 20px; width: 150px;">£360 (instead of £390)</td>
-        <td style="height: 20px; width: 150px;">£648 (instead of £690)
+        <td style="height: 20px; width: 150px;">Â£360 (instead of Â£390)</td>
+        <td style="height: 20px; width: 150px;">Â£648 (instead of Â£690)
         </td>
-        <td style="height: 20px; width: 150px;">£876 (instead of £900)
-        </td>
-      </tr>
-<tr>
-        <td style="height: 20px; width: 146px;">per <b>month</b></td>
-        <td style="height: 20px; width: 150px;">£30</td>
-        <td style="height: 20px; width: 150px;">£54
-        </td>
-        <td style="height: 20px; width: 150px;">£73
+        <td style="height: 20px; width: 150px;">Â£876 (instead of Â£900)
         </td>
       </tr>
 <tr>
         <td style="height: 20px; width: 146px;">per lesson </td>
-        <td style="height: 20px; width: 150px;">£13</td>
-        <td style="height: 20px; width: 150px;">£23
+        <td style="height: 20px; width: 150px;">Â£13</td>
+        <td style="height: 20px; width: 150px;">Â£23
         </td>
-        <td style="height: 20px; width: 150px;">£30
+        <td style="height: 20px; width: 150px;">Â£30
         </td>
       </tr>
 </tbody></table>
 <br />
-<p><b>Note:</b> Fees per lesson are only used for one-off trial sessions and to calculate fees for pupils who join us in mid-term.</p>
+<p><b>Note:</b> Fees per lesson are only used for one-off trial sessions and to calculate fees for pupils who join us in mid-term. You can't "pay as you go".</p>
 <p><b>Fees paid for any term are non-refundable after the term has started.</b></p>
 <br />
 
 <h3>
 Short lessons</h3>
-<p>We also offer lessons about 1 hour long to non-native speakers only, from 9:30 to 10:30 or 11:15-12:30, 10 Saturdays per term.</p><br />
+<p>We also offer lessons about 1 hour long to non-native speakers only, from 9:30-10:30 or 11:15-12:30, 10 Saturdays per term.</p><br />
 <table cellspacing="0" style="width: 600px;">
       <tbody>
 <tr>
@@ -87,13 +79,13 @@ Short lessons</h3>
       </tr>
 <tr>
         <td style="height: 20px; width: 146px;">9:30 lesson</td>
-        <td style="height: 20px; width: 150px;">£70</td>
-<td style="height: 20px; width: 150px;">£7</td>
+        <td style="height: 20px; width: 150px;">Â£70</td>
+<td style="height: 20px; width: 150px;">Â£7</td>
        </tr>
 <tr>
         <td style="height: 20px; width: 146px;">11:15 lesson</td>
-        <td style="height: 20px; width: 150px;">£90</td>
-<td style="height: 20px; width: 150px;">£9</td>
+        <td style="height: 20px; width: 150px;">Â£90</td>
+<td style="height: 20px; width: 150px;">Â£9</td>
        </tr>
 </tbody></table>
 <br />
@@ -120,9 +112,9 @@ Paypal</h3>
 <input type="hidden" name="hosted_button_id" value="2Y7A45X3WSZYY">
 <table>
 <tr><td><input type="hidden" name="on0" value="Fees">Fees</td></tr><tr><td><select name="os0">
-	<option value="1 child">1 child (£132.00)
-	<option value="2 children">2 children (£233.50)
-	<option value="3 children">3 children (£304.50)
+	<option value="1 child">1 child (Â£132.00)
+	<option value="2 children">2 children (Â£233.50)
+	<option value="3 children">3 children (Â£304.50)
 </select> </td></tr>
 <tr><td><input type="hidden" name="on1" value="Children's name">Children's name</td></tr><tr><td><input type="text" name="os1" maxlength="60">
 </table>

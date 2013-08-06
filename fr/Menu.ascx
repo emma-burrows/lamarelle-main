@@ -1,4 +1,4 @@
-<%@ Control Language="C#" ClassName="Menu" %>
+﻿<%@ Control Language="C#" ClassName="Menu" %>
 
         <div class="menu">
           <div class="red menu box"><a href="http://lamarelle.org.uk">Accueil</a></div>

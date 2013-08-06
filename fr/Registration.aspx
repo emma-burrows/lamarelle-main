@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Registration.aspx.cs" Inherits="en_Registration"  MasterPageFile="~/masterpage.master" Title="La Marelle - Inscriptions" %>
+ï»¿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Registration.aspx.cs" Inherits="en_Registration"  MasterPageFile="~/masterpage.master" Title="La Marelle - Inscriptions" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -16,7 +16,7 @@
     questionnaire suivant et nous vous contacterons rapidement&nbsp;:</p>
         <br />
 
-      <strong>Vos coordonnées :</strong>
+      <strong>Vos coordonnÃ©es :</strong>
       <br />
 
     <table width="600">
@@ -32,10 +32,10 @@
       </tr>
       <tr>
         <td style="width: 110px" valign="top">
-          Prénom :</td>
+          PrÃ©nom :</td>
         <td style="width: 301px" valign="top">
           <asp:TextBox id="txtPrenom" style="width: 302px" runat="server" />
-          <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtPrenom" runat="server" ErrorMessage="Veuillez entrer votre prénom"></asp:RequiredFieldValidator>
+          <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="txtPrenom" runat="server" ErrorMessage="Veuillez entrer votre prÃ©nom"></asp:RequiredFieldValidator>
         </td>
         <td style="width: 87px" valign="top">
         </td>
@@ -50,24 +50,24 @@
       </tr>
       <tr>
         <td style="width: 110px" valign="top">
-          Téléphone 1 :</td>
+          TÃ©lÃ©phone 1 :</td>
         <td style="width: 301px" valign="top">
           <asp:TextBox id="txtTel1" width="302px" runat="server" /></td>
         <td style="width: 87px" valign="top">
         <asp:DropDownList ID="selTel1" runat="server" width="103px">
-          <asp:ListItem>journée</asp:ListItem>
+          <asp:ListItem>journÃ©e</asp:ListItem>
           <asp:ListItem>soir</asp:ListItem>
         </asp:DropDownList>
         </td>
       </tr>
       <tr>
         <td style="width: 110px" valign="top">
-          Téléphone 2 :</td>
+          TÃ©lÃ©phone 2 :</td>
         <td style="width: 301px" valign="top">
           <asp:TextBox id="txtTel2" width="302px" runat="server" /></td>
         <td style="width: 87px" valign="top">
         <asp:DropDownList ID="selTel2" runat="server" width="103px">
-          <asp:ListItem>journée</asp:ListItem>
+          <asp:ListItem>journÃ©e</asp:ListItem>
           <asp:ListItem>soir</asp:ListItem>
         </asp:DropDownList>
         </td>
@@ -84,7 +84,7 @@
         </td>
       </tr>
       <tr>
-        <td style="width: 110px" valign="top">Nationalité(s) :</td>
+        <td style="width: 110px" valign="top">NationalitÃ©(s) :</td>
         <td style="width: 301px" valign="top">
           <asp:TextBox id="txtNationalite" width="302px" runat="server" /></td>
         <td style="width: 87px" valign="top">
@@ -101,13 +101,13 @@
       <td style="width: 145px">
         <strong>Nom</strong></td>
       <td style="width: 145px">
-        <strong>Prénom</strong></td>
+        <strong>PrÃ©nom</strong></td>
       <td style="width: 118px">
         <strong>Date de naissance (jj/mm/aa)</strong></td>
       <td style="width: 40px">
           <b>Sexe</b></td>
         <td style="width: 120px">
-            <strong>Nationalité</strong></td>
+            <strong>NationalitÃ©</strong></td>
     </tr>
     <tr>
       <td style="width: 11px">
@@ -171,8 +171,8 @@
   <strong>Origine du bilinguisme :<br /></strong>
     <asp:CheckBoxList ID="cbBilinguisme" runat="server" RepeatColumns="2" Width="621px">
       <asp:ListItem Value="Parent(s) francophone(s)">Parent(s) francophone(s)</asp:ListItem>
-      <asp:ListItem Value="Sejour prolonge dans pays francophone">Séjour prolongé dans pays francophone</asp:ListItem>
-      <asp:ListItem Value="Cherche cours FLE">Enfants non-francophones (Français langue étrangère)</asp:ListItem>
+      <asp:ListItem Value="Sejour prolonge dans pays francophone">SÃ©jour prolongÃ© dans pays francophone</asp:ListItem>
+      <asp:ListItem Value="Cherche cours FLE">Enfants non-francophones (FranÃ§ais langue Ã©trangÃ¨re)</asp:ListItem>
     </asp:CheckBoxList><br />
 
   <table>
@@ -184,14 +184,14 @@
     </tr>
     <tr>
       <td style="width: 217px">
-        <strong>Langues parlées à la maison :</strong></td>
+        <strong>Langues parlÃ©es Ã  la maison :</strong></td>
       <td style="width: 371px">
         <asp:TextBox id="txtLangues" style="width: 370px" runat="server" /></td>
     </tr>
   </table>
   <br />
   <strong>
-Niveau du français des enfants :<br />
+Niveau du franÃ§ais des enfants :<br />
   </strong>
   <asp:CheckBoxList ID="cbNiveau" runat="server" RepeatColumns="4" Width="370px">
     <asp:ListItem>Compris</asp:ListItem>
@@ -208,17 +208,17 @@ Comment avez-vous entendu parler de La Marelle ?<br />
     <tr>
       <td style="width: 217px">
     <asp:DropDownList ID="ddlSource" runat="server" width="203px">
-          <asp:ListItem>amis/collègues</asp:ListItem>
+          <asp:ListItem>amis/collÃ¨gues</asp:ListItem>
 <asp:ListItem>email (preciser l'expediteur)</asp:ListItem>
 <asp:ListItem>web (preciser le site)</asp:ListItem>
 <asp:ListItem>affichette (preciser le lieu)</asp:ListItem> 
 <asp:ListItem>carte de visite</asp:ListItem>
 <asp:ListItem>article presse</asp:ListItem>
-<asp:ListItem>autres (préciser)</asp:ListItem>
+<asp:ListItem>autres (prÃ©ciser)</asp:ListItem>
         </asp:DropDownList>
        </td>
       <td style="width: 371px">
-        <asp:TextBox id="Precisions" style="width: 370px" runat="server" Text="(préciser ici)"/></td>
+        <asp:TextBox id="Precisions" style="width: 370px" runat="server" Text="(prÃ©ciser ici)"/></td>
     </tr>
 </table>
 

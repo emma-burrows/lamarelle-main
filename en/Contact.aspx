@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Contact.aspx.cs" Inherits="en_Contact" MasterPageFile="~/masterpage.master" Title="La Marelle - Contact Us" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Contact.aspx.cs" Inherits="en_Contact" MasterPageFile="~/masterpage.master" Title="La Marelle - Contact Us" %>
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -47,12 +47,6 @@
   <asp:Button ID="btnEnvoyer" runat="server" OnClick="btnEnvoyer_Click" Text="Send" />
   <br />
   <br />
-
-
-<p>You can also send any correspondance to 5 Eynsford Road, Greenhithe DA9 9HB.</p>
-<p>The above address is for post only - lessons and registration days take place at 
-<a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="View our exact location on Google Maps">Fleetdown Primary School</a> in Dartford and other activities take place where stated on this web page.</p>
 </asp:Panel>
 
 </asp:Content>

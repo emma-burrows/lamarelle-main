@@ -1,4 +1,4 @@
-<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Contact.aspx.cs" Inherits="en_Contact" MasterPageFile="~/masterpage.master" Title="La Marelle - Contact" %>
+ï»¿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Contact.aspx.cs" Inherits="en_Contact" MasterPageFile="~/masterpage.master" Title="La Marelle - Contact" %>
 
 
 
@@ -9,13 +9,13 @@
 <asp:Panel ID="MainText" runat="server">
    <h1>Contactez-nous</h1>
 
-<p>Si vous pensez inscrire vos enfants à La Marelle, veuillez remplir notre</p>
+<p>Si vous pensez inscrire vos enfants Ã  La Marelle, veuillez remplir notre</p>
 
 <p align="center"><a href="Registration.aspx#form"><strong>Fiche d'inscription en ligne</strong></a></p>
 
-<p>La fiche d'inscription n'engage à rien et nous permet de mieux vous répondre en nous donnant les détails des âges de vos enfants et vos coordonnées complètes.</p>
+<p>La fiche d'inscription n'engage Ã  rien et nous permet de mieux vous rÃ©pondre en nous donnant les dÃ©tails des Ã¢ges de vos enfants et vos coordonnÃ©es complÃ¨tes.</p>
 
-<p>Si vous avez des questions d'ordre général, veuillez remplir le formulaire suivant :</p>
+<p>Si vous avez des questions d'ordre gÃ©nÃ©ral, veuillez remplir le formulaire suivant :</p>
 
     <table>
       <tr>
@@ -46,11 +46,6 @@
   <asp:Button ID="btnEnvoyer" runat="server" OnClick="btnEnvoyer_Click" Text="Send" />
   <br />
   <br />
-
-
-<p>Vous pouvez également nous écrire au 5 Eynsford Road, Greenhithe DA9 9HB.</p>
-<p>Cette adresse est uniquement pour le courrier de La Marelle - les leçons et les journées d'inscription ont lieu à <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="Voir notre situation géographique sur Google Maps">Fleetdown Primary School</a> à Dartford et nos autres activités auront lieu à l'endroit indiqué sur leur page web.</p>
 </asp:Panel>
 
 </asp:Content>
