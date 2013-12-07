@@ -21,7 +21,7 @@ langue et de la culture françaises au Royaume-Uni, entre autres en aidant la cr
 </p>
 
 <p><a href="http://lespetitslapins.forumotion.com/">Le Forum des Petits Lapins</a><br />
-Créé par des parents de la région de Maidstone, le site contient des informations sur les évènements qui se déroulent dans tout le Kent. C'est également un lieu de rencontre et de conversation pour les internautes francophones. Vous devez vous enregistrer pour lire et répondre aux messages.
+Créé par des parents de la région de Maidstone, le site contient des informations sur les événements qui se déroulent dans tout le Kent. C'est également un lieu de rencontre et de conversation pour les internautes francophones. Vous devez vous enregistrer pour lire et répondre aux messages.
 </p>
 
 <p><a href="http://www.geocities.com/petiteecoleealing//">La Petite Ecole d'Ealing</a><br />

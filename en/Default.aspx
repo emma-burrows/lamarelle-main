@@ -10,6 +10,7 @@
         <div class="cursif" style="text-align: center;">
           Apprendre est un jeu d'enfant</div>
         <p>
+          <%=ResMan.GetString("Blurb")%>
           La Marelle is a French school and community centre based in <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
             title="View our exact location on Google Maps">Dartford in North-West Kent</a> (registered charity number <a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&SubsidiaryNumber=0">1135186</a>).
           We offer French-language lessons and activities on Saturday mornings.</p>
@@ -44,39 +45,27 @@
   <h1>
     Latest News</h1>
   <table align="center" width="100%" cellpadding="5" cellspacing="10">
-        <asp:Repeater ID="FormView1" runat="server">
-          <ItemTemplate>
-          <tr>
+    <asp:Repeater ID="FormView1" runat="server">
+      <ItemTemplate>
+        <tr>
           <td class="yellow box">
             <h2>
-              <asp:HyperLink NavigateUrl='<%# Bind("URL") %>' ID="FrenchTitleLabel" runat="server"
-                      Text='<%# Bind("Title") %>' /></h2>
-                  <asp:Literal ID="FrenchLabel" runat="server" Text='<%# Bind("Description") %>' />
-                </td>
-              </tr>
-          </ItemTemplate>
-          <AlternatingItemTemplate>
+              <asp:HyperLink NavigateUrl='<%# Bind("URL") %>' ID="FrenchTitleLabel" runat="server" Text='<%# Bind("Title") %>' />
+            </h2>
+            <asp:Literal ID="FrenchLabel" runat="server" Text='<%# Bind("Description") %>' />
+          </td>
+        </tr>
+      </ItemTemplate>
+      <AlternatingItemTemplate>
         <tr>
           <td class="purple box">
             <h2>
-
-                    <asp:HyperLink NavigateUrl='<%# Bind("URL") %>' ID="FrenchTitleLabel" runat="server"
-                      Text='<%# Bind("Title") %>' /></h2>
-                  <asp:Label ID="FrenchLabel" runat="server" Text='<%# Bind("Description") %>' />
-                </td>
-              </tr>
-          </AlternatingItemTemplate>
-        </asp:Repeater>
-  </table>
-  <h1>
-    Facebook</h1>
-  <table width="100%" cellpadding="10" cellspacing="5">
-    <tr>
-      <td class="green box">
-        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLa-Marelle%2F112289512183777&amp;width=650&amp;colorscheme=light&amp;show_faces=false&amp;stream=true&amp;header=false&amp;"
-          scrolling="yes" frameborder="0" style="width: 100%; height: 300px;" allowtransparency="true">
-        </iframe>
-      </td>
-    </tr>
+              <asp:HyperLink NavigateUrl='<%# Bind("URL") %>' ID="FrenchTitleLabel" runat="server" Text='<%# Bind("Title") %>' />
+            </h2>
+            <asp:Label ID="FrenchLabel" runat="server" Text='<%# Bind("Description") %>' />
+          </td>
+        </tr>
+      </AlternatingItemTemplate>
+    </asp:Repeater>
   </table>
 </asp:Content>

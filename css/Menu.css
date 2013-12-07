@@ -163,10 +163,14 @@ P
   -webkit-box-shadow: -2px 2px 16px #898DD7;
   box-shadow: -2px 2px 16px #898DD7;
 }
+body {
+  background-color: #000040;
+}
 
 .menu .box
 {
   border: none;
+  max-width: 150px;
 }
 
 img, #banner.box

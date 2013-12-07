@@ -102,7 +102,7 @@ Cours d'une heure</h3>
 <p>Les méthodes de paiement suivantes sont disponibles :</p>
 
 <h3>Chèque</h3>
-<p>Le chèque doit être tiré sur une banque ou building society anglaise et fait à l'ordre de "La Marelle". Vous pouvez le remettre en main propre à à la réception pendant les cours.</p>
+<p>Le chèque doit être tiré sur une banque ou building society anglaise et fait à l'ordre de "La Marelle". Vous pouvez le remettre en main propre à la réception pendant les cours.</p>
 
 <h3>Virement bancaire ou virement mensuel</h3>
 <p>Veuillez <a href="contact.aspx">nous contacter</a> pour obtenir nos coordonnées bancaires. Vous devez mettre en place le virement mensuel directement auprès de votre banque. Les standing order mensuels sont payables <b>à l'avance</b>, et vous devez donc payer une mensualité pour le mois avant le début des cours.</p>

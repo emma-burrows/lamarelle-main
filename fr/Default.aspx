@@ -10,7 +10,7 @@
         <div class="cursif" style="text-align: center;">
           Apprendre est un jeu d'enfant</div>
         <p>
-          La Marelle est une école et un centre communautaire français située à <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
+          La Marelle est une école française située à <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
             title="Voir notre position sur Google Maps">Dartford dans le nord-ouest du Kent</a> (association numéro <a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&SubsidiaryNumber=0">1135186</a>).
           Nous proposons des activités et cours en français le samedi matin.</p>
         <table align="center" cellpadding="5" cellspacing="10" style="width: 100%">
@@ -66,16 +66,5 @@
         </tr>
       </AlternatingItemTemplate>
     </asp:Repeater>
-  </table>
-  <h1>
-    Facebook</h1>
-  <table width="100%" cellpadding="10" cellspacing="5">
-    <tr>
-      <td class="green box">
-        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLa-Marelle%2F112289512183777&amp;width=650&amp;colorscheme=light&amp;show_faces=false&amp;stream=true&amp;header=false&amp;"
-          scrolling="yes" frameborder="0" style="width: 100%; height: 250px;" allowtransparency="true">
-        </iframe>
-      </td>
-    </tr>
   </table>
 </asp:Content>

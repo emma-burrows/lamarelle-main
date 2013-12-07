@@ -5,11 +5,15 @@ using System.Net.Mail;
 
 public partial class en_Registration : System.Web.UI.Page
 {
-
+  /// <summary>
+  /// Compile the contents of the form into an email body.
+  /// </summary>
+  /// <returns></returns>
   private StringBuilder getBody()
   {
     //Make body text
     StringBuilder sbBody = new StringBuilder();
+
     //Contact details
     sbBody.Append("<b>Nom:</b> " + txtNom.Text + "<br/>" +
           "<b>Prénom:</b> " + txtPrenom.Text + "<br/>" +
