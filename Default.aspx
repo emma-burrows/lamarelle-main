@@ -2,25 +2,25 @@
 
 
 <script runat="server">
-    protected void Page_Load(object sender, EventArgs e)
+  protected void Page_Load(object sender, EventArgs e)
+  {
+    if (Request.QueryString.ToString() == "photos")
     {
-        if (Request.QueryString.ToString() == "photos")
-        {
-            Response.Redirect("/fr/gallery.aspx?path=/images/classes/2009");
-        }
-        if (Request.Cookies["LaMarelleLang"] == null)
-        {
-            Response.Redirect("/en/default.aspx");
-        }
-        else
-        {
-
-            if (Request.Cookies["LaMarelleLang"].Value == "fr")
-                Response.Redirect("/fr/default.aspx");
-            else
-                Response.Redirect("/en/default.aspx");
-        }
+      Response.Redirect("~/fr/gallery.aspx?path=/images/classes/2009");
     }
+    if (Request.Cookies["LaMarelleLang"] == null)
+    {
+      Response.Redirect("~/en/default.aspx");
+    }
+    else
+    {
+
+      if (Request.Cookies["LaMarelleLang"].Value == "fr")
+        Response.Redirect("~/fr/default.aspx");
+      else
+        Response.Redirect("~/en/default.aspx");
+    }
+  }
 </script>
 
 <asp:Content ContentPlaceHolderID="MenuPlaceHolder" runat="server">

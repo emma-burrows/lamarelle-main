@@ -1,6 +1,6 @@
 ﻿<%@ Control Language="C#" ClassName="Menu" %>
 
-<ul  class="nav nav-pills" id="menu">
+<ul  class="nav nav-pills nav-justified" id="menu">
   <li class="red menu box"><a href="http://lamarelle.org.uk">Accueil</a></li>
   <li class="purple menu box"><a href="fees.aspx">Tarifs</a></li>
   <li class="yellow menu box"><a href="Dates.aspx">Dates de cours</a></li>

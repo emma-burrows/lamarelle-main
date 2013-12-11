@@ -13,6 +13,8 @@
     MenuUserControl = LoadControl("~/" + Lang + "/Menu.ascx");
     MenuPlaceHolder.Controls.Add(MenuUserControl);
 
+    lkEnglish.ImageUrl = ResolveUrl("~/unitedkingdom.gif");
+    lkFrench.ImageUrl = ResolveUrl("~/france.gif");
   }
 
   
@@ -59,8 +61,8 @@
     <link rel="stylesheet" media="only screen and (max-width: 800px)" href="<%= ResolveUrl ("~/css/Narrow.css") %>"/>
     <link href='http://fonts.googleapis.com/css?family=Domine|Lobster+Two|Sacramento' rel='stylesheet' type='text/css'/>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-</head>
-<body bgcolor="#000040" height="100%">
+  </head>
+  <body bgcolor="#000040" height="100%">
     <form id="form1" height="100%" runat="server">
       <table width="90%" style="border: solid 1px navy;  background-color: AliceBlue; height: 100%;" align="center">
         <tr>
@@ -68,10 +70,8 @@
             <div id="bannerdiv" style="width: 100%; height: 140px; position: relative; text-align:center;">
               <a href="http://www.lamarelle.org.uk"><div id="banner" class="box"></div></a>
                 <div align="left" style="width: 70px; left: 5px; position: absolute; top: 124px">
-                <asp:ImageButton id="lkFrench" ImageUrl="ResolveUrl ('~/france.gif')" runat="server" CssClass="Menu" 
-                OnClick="lkFrench_Click" /> 
-                <asp:ImageButton ID="lkEnglish" ImageUrl="ResolveUrl ('~/unitedkingdom.gif')" runat="server" CssClass="Menu" 
-                OnClick="lkEnglish_Click" />
+                <asp:ImageButton id="lkFrench" ImageUrl="ResolveUrl ('~/france.gif')" runat="server" CssClass="Menu" OnClick="lkFrench_Click" /> 
+                <asp:ImageButton ID="lkEnglish" ImageUrl="ResolveUrl ('~/unitedkingdom.gif')" runat="server" CssClass="Menu" OnClick="lkEnglish_Click" />
                 </div>
             </div>
           </td>
