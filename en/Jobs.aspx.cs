@@ -44,7 +44,7 @@ public partial class en_Jobs : System.Web.UI.Page
       }
       catch (Exception ex)
       {
-        labResult.Text = "<p class='alert alert-danger'>" + ex.Message.ToString() + "</div>";
+        labResult.Text = "<div class='alert alert-danger'>" + ex.Message.ToString() + "</div>";
       }
     }
   }
