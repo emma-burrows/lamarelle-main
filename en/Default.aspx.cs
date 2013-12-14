@@ -14,12 +14,10 @@ using System.Globalization;
 
 public partial class en_Default : System.Web.UI.Page
 {
-  protected ResourceManager ResMan;
   public DataSet dsItems = new DataSet();
 
   protected void Page_Load(object sender, EventArgs e)
   {
-    ResMan = new ResourceManager("Default", typeof(en_Default).Assembly);
 
     WebProxy proxy = (WebProxy)WebProxy.GetDefaultProxy();
     if (proxy.Address != null)

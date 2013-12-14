@@ -36,7 +36,7 @@ public static class Utils
         Lang = Request.Cookies["LaMarelleLang"].Value;
 
       //check for language cookie and set the menu
-      if (Request.Url.AbsolutePath.StartsWith("/fr/") || Request.Url.AbsolutePath.StartsWith("/lamarelle/fr/"))
+      if (Request.Url.AbsolutePath.Contains("/fr/"))
       {
         Lang = "fr";
       }

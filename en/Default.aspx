@@ -10,7 +10,6 @@
         <div class="cursif" style="text-align: center;">
           Apprendre est un jeu d'enfant</div>
         <p>
-          <%=ResMan.GetString("Blurb")%>
           La Marelle is a French school and community centre based in <a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
             title="View our exact location on Google Maps">Dartford in North-West Kent</a> (registered charity number <a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&SubsidiaryNumber=0">1135186</a>).
           We offer French-language lessons and activities on Saturday mornings.</p>
