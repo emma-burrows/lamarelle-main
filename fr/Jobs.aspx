@@ -1,61 +1,10 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/masterpage.master" Title="La Marelle - Emplois" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="~/en/Jobs.aspx.cs" Inherits="en_Jobs" MasterPageFile="~/masterpage.master" Title="La Marelle - Emplois" %>
 
-
-<script runat="server">
-
-  protected void btnEnvoyer_Click(object sender, EventArgs e)
-  {
-    if (Page.IsValid)
-    {
-
-      
-      //Make body text
-      StringBuilder sbBody = new StringBuilder();
-      //Contact details
-      sbBody.Append("<b>Nom:</b> " + txtNom.Text + "<br/>");
-
-      sbBody.Append("<b>Email:</b> " + txtEmail.Text + "<br /><br/>");
-      sbBody.Append(txtComment.Text.Replace(Environment.NewLine, "<br/>"));
-
-      //Make message
-      System.Web.Mail.SmtpMail.SmtpServer = "localhost";
-      System.Web.Mail.MailMessage msg = new System.Web.Mail.MailMessage();
-      msg.From = txtEmail.Text;
-      msg.To = "hasinaharris1@hotmail.com";
-      msg.Cc = "site@lamarelle.org.uk";
-      msg.Subject = "Emploi La Marelle - " + txtNom.Text;
-      msg.BodyFormat = System.Web.Mail.MailFormat.Html;
-      msg.Body = sbBody.ToString();
-
-      if (CVUpload.HasFile)
-        try
-        {
-            CVUpload.SaveAs(Server.MapPath("../_files") + "\\" + CVUpload.FileName);
-            System.Web.Mail.MailAttachment ma = new System.Web.Mail.MailAttachment(Server.MapPath("../_files") + "\\" + CVUpload.FileName);
-            msg.Attachments.Add(ma);
-            labResult.Text = "Merci pour votre message et votre CV. Nous vous contacterons bientôt.";
-        }
-        catch (Exception ex)
-        {
-          labResult.Text = "ERREUR: " + ex.Message.ToString();
-        }
-      else
-        labResult.Text = "Merci pour votre message. Nous vous contacterons bientôt.";
-        
-        
-      //Send message
-      System.Web.Mail.SmtpMail.Send(msg);
-      MainText.Visible = false;
-    }
-  }
- 
-
-</script>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
 
-<b><asp:Label ID="labResult" runat="server" /></b>
+<asp:Label ID="labResult" runat="server" />
  
 <asp:Panel ID="MainText" runat="server">
    <h1>Emplois à La Marelle</h1>
@@ -75,42 +24,25 @@ Nous faisons cours 30 samedi par an.</p>
  <p>
 Pour plus d'information, veuillez nous envoyer un CV (format Word ou PDF seulement) avec lettre de motivation en français en utilisant le formulaire ci-dessous:</p>
 
-    <table>
-      <tr>
-        <td style="width: 110px" valign="top">
-          Votre nom :</td>
-        <td style="width: 301px" valign="top">
-          <asp:TextBox id="txtNom" width="302px" runat="server" /></td>
-        <td style="width: 87px" valign="top">
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 110px" valign="top">Votre email :</td>
-        <td style="width: 301px" valign="top">
-          <asp:TextBox id="txtEmail" width="302px" runat="server" /></td>
-        <td style="width: 87px" valign="top">
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 110px; height: 60px" valign="top">
-          Votre lettre :</td>
-        <td style="width: 301px; height: 60px" valign="top">
-          <asp:TextBox id="txtComment" rows="10" width="303px" runat="server" TextMode="MultiLine"/></td>
-        <td style="width: 87px; height: 60px" valign="top">
-        </td>
-      </tr>
-      <tr>
-        <td style="width: 110px; height: 60px" valign="top">
-          Votre CV (Word ou PDF) :</td>
-        <td style="width: 301px; height: 60px" valign="top">
-          <asp:FileUpload ID="CVUpload" runat="server" />
-        <td style="width: 87px; height: 60px" valign="top">
-        </td>
-      
-      </tr>
-    </table>
+  <div class="form-group">
+    <asp:Label ID="Label1" AssociatedControlID="txtNom" runat="server">Votre nom:</asp:Label>
+    <asp:TextBox id="txtNom" CssClass="form-control" runat="server" AutoCompleteType="DisplayName" placeholder="Entrez votre nom"/>
+  </div>
+  <div class="form-group">
+    <asp:Label ID="Label2" AssociatedControlID="txtEmail" runat="server">Votre email:</asp:Label>
+    <asp:TextBox id="txtEmail" CssClass="form-control" runat="server" AutoCompleteType="Email" placeholder="Entrez votre email"/>
+  </div>
+  <div class="form-group">
+    <asp:Label ID="Label3" AssociatedControlID="txtComment" runat="server">Pourquoi aimeriez-vous travailler à La Marelle?</asp:Label>
+    <asp:TextBox id="txtComment" CssClass="form-control" rows="10" runat="server" TextMode="MultiLine"/>
+  </div>
+  <div class="form-group">
+    <asp:Label ID="Label4" AssociatedControlID="txtComment" runat="server">Votre CV (Word ou PDF seulement):</asp:Label>
+    <asp:FileUpload ID="CVUpload" CssClass="btn btn-default" runat="server" />
+  </div>
+
   <br />
-  <asp:Button ID="btnEnvoyer" runat="server" OnClick="btnEnvoyer_Click" Text="Envoyer" />
+  <asp:Button ID="btnEnvoyer" CssClass="btn btn-primary" runat="server" OnClick="btnEnvoyer_Click" Text="Envoyer" />
   <br />
   <br />
 </asp:Panel>
