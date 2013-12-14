@@ -87,12 +87,12 @@ public partial class en_Registration : System.Web.UI.Page
       try
       {
         String message = SendEmail.send(txtEmail.Text, txtNom.Text, getBody());
-        labResult.Text = "<p class='text-success'>" + message + "</p>";
+        labResult.Text = "<div class='alert alert-success'>" + message + "</div>";
         MainText.Visible = false;
       }
       catch (Exception ex)
       {
-        labResult.Text = "<p class='text-error'>" + ex.Message + "</p>";
+        labResult.Text = "<div class='alert alert-danger'>" + ex.Message + "</div>";
       }
 
     }

@@ -28,19 +28,16 @@ public partial class en_Contact : System.Web.UI.Page
   {
     if (Page.IsValid)
     {
-    try
-    {
-
-      String message = SendEmail.send(txtEmail.Text, txtNom.Text, getBody());
-      labResult.Text = "<p class='text-success'>" + message + "</p>";
-      MainText.Visible = false;
-    }
-    catch (Exception ex)
-    {
-        labResult.Text = "<p class='text-error'>" + ex.Message + "</p>";
-    }
-
-      
+      try
+      {
+        String message = SendEmail.send(txtEmail.Text, txtNom.Text, getBody());
+        labResult.Text = "<div class='alert alert-success'>" + message + "</div>";
+        MainText.Visible = false;
+      }
+      catch (Exception ex)
+      {
+        labResult.Text = "<div class='alert alert-danger'>" + ex.Message + "</div>";
+      }
     }
   }
 

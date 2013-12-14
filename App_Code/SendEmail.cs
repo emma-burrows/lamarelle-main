@@ -56,7 +56,7 @@ public static class  SendEmail
 
       // Pack it all up and send it off
       msg.Subject = "Site La Marelle - " + name;
-      msg.Body = sbBody.ToString();
+      msg.Body = sbBody.Replace(Environment.NewLine, "<br/>").ToString();
 
       // Set the host, username and password
       System.Net.Mail.SmtpClient smtp = new SmtpClient("scriptmail.ourwindowsnetwork.com");

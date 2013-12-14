@@ -60,12 +60,12 @@ A.menu, .menu A
   display: block;
   font-size: 1em; 
 }
-A.menu:hover
+A.menu:hover, .nav > li.menu > A:hover
 {
   font-family: Arial;
-  color: #800000;
+  color: #F00060;
   text-decoration: none;
-  background-color: #FF9999;
+  background-color: transparent;
 }
 
 
