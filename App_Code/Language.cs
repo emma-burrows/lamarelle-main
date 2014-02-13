@@ -1,8 +1,10 @@
 using System;
+using System.Globalization;
+using System.Threading;
 using System.Web;
 
 /// <summary>
-/// Send an email
+/// Set the language
 /// </summary>
 public static class Utils
 {
@@ -51,8 +53,10 @@ public static class Utils
     if (Lang == "fr")
       cultureLang = "fr-FR";
 
-    System.Threading.Thread.CurrentThread.CurrentCulture =
-                       new System.Globalization.CultureInfo(cultureLang);
+    CultureInfo cultureInfo = CultureInfo.CreateSpecificCulture(cultureLang);
+    
+    Thread.CurrentThread.CurrentCulture = cultureInfo;
+    Thread.CurrentThread.CurrentUICulture = new CultureInfo(cultureLang);
 
     return Lang;
   }

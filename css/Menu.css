@@ -3,16 +3,29 @@
 BODY
 {
   font-family: 'Domine', Arial, Georgia, Times New Roman;
+  background-color: #000040;
+  height: 100%;
+}
+
+.container 
+{
+  background-color: AliceBlue;
 }
 
 #banner
 {
-  background-image: url("/Banner.png");
+  background-image: url("../Banner.png");
   background-repeat: no-repeat;
   width: 900px; /*or your image's width*/
   height: 120px; /*or your image's height*/
   margin: 0px auto;
   padding: 0;
+}
+
+.cursif
+{
+  font-family: Sacramento, Comic Sans MS, Serif;
+  font-size: 2em;
 }
 
 #ctl00_ContentPlaceHolder1_MainText
@@ -30,45 +43,6 @@ A:hover
 {
   color: red;
 }
-
-DIV.menu
-{
-  width: 50%;
-  display: inline-block;
-  float: left;
-  padding: 0;
-  margin: 0;
-}
-DIV.menu > DIV.menu
-{
-  display:inline-block;
-  min-width: 70px;
-  width: 31%;
-  height: 20px;
-  border: none;
-  text-align: center;
-  padding: 5px;
-}
-
-A.menu, .menu A
-{
-  padding: 3px;
-  padding-left: 5px;
-  font-family: Arial;
-  font-weight: normal;
-  text-decoration: none;
-  display: block;
-  font-size: 1em; 
-}
-A.menu:hover, .nav > li.menu > A:hover
-{
-  font-family: Arial;
-  color: #F00060;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-
 
 .yellow
 {
@@ -100,21 +74,17 @@ A.menu:hover, .nav > li.menu > A:hover
   border-color: Purple;
 }
 
-.cursif
-{
-  font-family: Sacramento, Comic Sans MS, Serif;
-  font-size: xx-large;
-}
+
 
 H1
 {
   color: #000040;
   font-family: 'Lobster Two' , Arial, Helvetica;
-  font-size: 16pt;
   margin-top: 0;
   text-shadow: -2px 2px 5px #898DD7; /*171940;*/
-
+  margin-bottom: 20px;
 }
+
 P+H1, table+H1 
 {
   margin-top: 10px;
@@ -124,7 +94,6 @@ H2
   color: #000040;
   font-family: Arial, Helvetica;
   font-weight: bold;
-  font-size: 14pt;
   border-bottom: solid 1pt #000040;
 }
 H3
@@ -132,7 +101,6 @@ H3
   color: #000040;
   font-family: Arial, Helvetica;
   font-weight: bold;
-  font-size: 12pt;
   margin-bottom: 0;
 }
 H4
@@ -141,7 +109,6 @@ H4
   font-family: Arial, Helvetica;
   font-weight: bold;
   font-style: italic;
-  font-size: 10pt;
   margin-top: 5pt;
   margin-bottom: 0;
 }
@@ -151,7 +118,7 @@ P
 }
 
 
-.box, img
+img, .box
 {
   padding: 7px;
   margin: 20px;
@@ -162,15 +129,6 @@ P
   -moz-box-shadow: -2px 2px 16px #898DD7;
   -webkit-box-shadow: -2px 2px 16px #898DD7;
   box-shadow: -2px 2px 16px #898DD7;
-}
-
-body {
-  background-color: #000040;
-}
-
-.menu .box
-{
-  border: none;
 }
 
 img, #banner.box
