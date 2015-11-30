@@ -38,19 +38,36 @@
     }
 
     protected void Application_BeginRequest(object sender, EventArgs e)
-    {
-      HttpCookie cookie = Request.Cookies["LaMarelleLang"];
+    { 
 
-      if (cookie != null && cookie.Value != null)
+      String currentPath = Request.Path.ToLower();
+
+      // Set the language based on the requested path or the cookie,
+      if (currentPath.Contains("/fr/") || currentPath.Contains("/en/"))
       {
-        Thread.CurrentThread.CurrentUICulture = new CultureInfo(cookie.Value);
-        Thread.CurrentThread.CurrentCulture = new CultureInfo(cookie.Value);
+        string culture = "en-GB";
+
+        if (currentPath.Contains("/fr/"))
+        {
+          culture = "fr-FR";
+        }
+
+        Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture(culture);
+        Thread.CurrentThread.CurrentUICulture = new CultureInfo(culture);
+        //Session["LaMarelleLang"] = culture;
+        Response.Cookies["LaMarelleLang"].Value = culture;
+        Response.Cookies["LaMarelleLang"].Expires = DateTime.Now.AddYears(1);
+
+        // Redirect to the common page in /p/
+        Context.RewritePath(currentPath.Replace("/fr/", "/p/").Replace("/en/", "/p/"), "", "lang=" + culture);
+
       }
       else
       {
-        Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-GB");
-        Thread.CurrentThread.CurrentCulture = new CultureInfo("en-GB");
+        // Don't change the culture if this is a request for /p/, as this would include 
+        // paths rewritten by the code above - ie redirected from a language-specific URL
       }
+
     }
        
 </script>

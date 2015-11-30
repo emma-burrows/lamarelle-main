@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="accountDetails.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;Veuillez &lt;a href="contact.aspx"&gt;nous contacter&lt;/a&gt; pour obtenir nos coordonnées bancaires.&lt;/p&gt;
+    &lt;p&gt;Veuillez donner &lt;b&gt;le nom de vos enfants&lt;/b&gt; comme référence pour que nous puissions vérifier quels élèves ont payé, et dites-nous si vous payez par virement comme nous ne recevons pas d'avis automatique pour les paiements électroniques.&lt;/p&gt;
+  </value>
+  </data>
+  <data name="additionalTitle.Text" xml:space="preserve">
+    <value>Frais supplémentaires</value>
+  </data>
+  <data name="bacs.Text" xml:space="preserve">
+    <value>Virement bancaire</value>
+  </data>
+  <data name="calculatorTitle.Text" xml:space="preserve">
+    <value>Calculatrice des tarifs</value>
+  </data>
+  <data name="cheque.Text" xml:space="preserve">
+    <value>Chèque</value>
+  </data>
+  <data name="chequeIntro.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;Le chèque doit être tiré sur une banque ou building society anglaise et fait à l'ordre de "La Marelle". Vous pouvez le remettre en main propre à la réception pendant les cours.&lt;/p&gt;
+  </value>
+  </data>
+  <data name="child1.Text" xml:space="preserve">
+    <value>1 enfant</value>
+  </data>
+  <data name="child2.Text" xml:space="preserve">
+    <value>2 enfants</value>
+  </data>
+  <data name="child3.Text" xml:space="preserve">
+    <value>3 enfants</value>
+  </data>
+  <data name="child4.Text" xml:space="preserve">
+    <value>4 enfants</value>
+  </data>
+  <data name="child5.Text" xml:space="preserve">
+    <value>5 enfants</value>
+  </data>
+  <data name="childrenLbl.Text" xml:space="preserve">
+    <value>Nombre d'enfants&amp;nbsp;:</value>
+  </data>
+  <data name="childsNamePaypal.Text" xml:space="preserve">
+    <value>Nom des enfants</value>
+  </data>
+  <data name="fees.Text" xml:space="preserve">
+    <value>Tarifs</value>
+  </data>
+  <data name="feesBlurb.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;Le solde des frais est dû avant le &lt;b&gt;premier cours du trimestre&lt;/b&gt; au plus tard. Les premiers à payer auront priorité si les places sont limitées au trimestre suivant.&lt;/p&gt;
+
+    &lt;p&gt;Exceptionnellement, il peut y avoir plus de 10 leçons dans un trimestre – les cours supplémentaires devront être payés au tarif « séance d'essai ».&lt;/p&gt;
+  </value>
+  </data>
+  <data name="hoursLbl.Text" xml:space="preserve">
+    <value>Nombre d'heures&amp;nbsp;:</value>
+  </data>
+  <data name="hoursOne.Text" xml:space="preserve">
+    <value>1 heure (Français langue étrangère)</value>
+  </data>
+  <data name="ImageButton2Resource1.AlternateText" xml:space="preserve">
+    <value>PayPal - The safer, easier way to pay online.</value>
+  </data>
+  <data name="intro.Text" xml:space="preserve">
+    <value>&lt;p&gt;Si vous pensez que vos enfants pourraient bénéficier de nos leçons de français 
+    pour francophones ou anglophones, vous pouvez leur faire faire une séance 
+    d'essai payante (voir les &lt;a href="Dates.aspx"&gt;dates de nos leçons&lt;/a&gt; pour 
+    savoir quand aura lieu notre prochaine séance).&lt;/p&gt;
+
+   &lt;p&gt;
+     Lors de leur inscription définitive, vous paierez alors un pro-rata des séances 
+     restantes pour le trimestre, ainsi que la contribution annuelle payée 
+     chaque année par tous les élèves. Des petites contributions pour les livres de 
+     bibliothèque ou les snacks vous seront éventuellement demandées selon les 
+     classes des vos enfants.&lt;/p&gt;</value>
+  </data>
+  <data name="lateHeader.Text" xml:space="preserve">
+    <value>Pénalités de retard</value>
+  </data>
+  <data name="lateIntro.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;Les paiements tardifs, après le premier samedi du trimestre, feront l'objet d'une pénalité de &lt;b&gt;frais administratifs de £20&lt;/b&gt; par enfant. Si aucun paiement n'est reçu avant la troisième séance, votre enfant ne sera plus considéré comme un élève de l'école. Veuillez nous contacter si vous ne pouvez pas payer les frais d'inscription, quelle que soit la raison.&lt;/p&gt;
+  </value>
+  </data>
+  <data name="ListItemResource1.Text" xml:space="preserve">
+    <value>Séance d'essai seulement</value>
+  </data>
+  <data name="ListItemResource2.Text" xml:space="preserve">
+    <value>Trimestre (3 mois = 10 séances)</value>
+  </data>
+  <data name="ListItemResource3.Text" xml:space="preserve">
+    <value>Année (septembre-juillet = 30 séances)</value>
+  </data>
+  <data name="litTitleResource1.Text" xml:space="preserve">
+    <value>Tarifs</value>
+  </data>
+  <data name="noRefund.Text" xml:space="preserve">
+    <value>Les frais d'inscription versés ne sont pas remboursables une fois le trimestre entamé.</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>La Marelle - Tarifs</value>
+  </data>
+  <data name="paypalIntro.Text" xml:space="preserve">
+    <value>
+&lt;p&gt;Vous pouvez nous payer en utilisant une carte bancaire, ou votre propre compte Paypal, en utilisant le formulaire suivant. Les prix sont majorés pour couvrir les frais d'encaissement de Paypal.&lt;/p&gt;
+    &lt;p&gt;Veuillez nous contacter si vous payez par Paypal comme nous ne sommes pas automatiquement informés des paiements sur ce compte.&lt;/p&gt;
+  </value>
+  </data>
+  <data name="SubmitResource1.Text" xml:space="preserve">
+    <value>Calculer le tarif</value>
+  </data>
+  <data name="suppliesHeader.Text" xml:space="preserve">
+    <value>Cotisation fournitures annuelle</value>
+  </data>
+  <data name="suppliesIntro.Text" xml:space="preserve">
+    <value>&lt;p&gt;Une cotisation de &lt;b&gt;£15&lt;/b&gt; par élève pour les fournitures est également due lors de la première inscription et au début de chaque année scolaire. Cette cotisation couvre une partie des frais de fournitures lorsqu'un élève rejoint une nouvelle classe.&lt;/p&gt;
+  </value>
+  </data>
+  <data name="termLbl.Text" xml:space="preserve">
+    <value>Afficher le tarif pour&amp;nbsp;:</value>
+  </data>
+  <data name="hoursThree.Text" xml:space="preserve">
+    <value>3 heures</value>
+  </data>
+  <data name="paymentMethods.Text" xml:space="preserve">
+    <value>Méthodes de paiement</value>
+  </data>
+</root>

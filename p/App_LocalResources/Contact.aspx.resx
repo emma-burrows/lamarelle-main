@@ -117,42 +117,46 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fleDesc.Text" xml:space="preserve">
-    <value>French classes for non-native speakers from 3 years to GCSE level and beyond.</value>
+  <data name="btnEnvoyer.Text" xml:space="preserve">
+    <value>Send</value>
   </data>
-  <data name="fleTitle.Text" xml:space="preserve">
-    <value>French as a foreign language</value>
+  <data name="btnEnvoyer.ToolTip" xml:space="preserve">
+    <value>Send us your query</value>
   </data>
-  <data name="fraDesc.Text" xml:space="preserve">
-    <value>Classes for children from a French-speaking background, with support from the French Embassy's "Plan Ecoles".</value>
+  <data name="intro.Text" xml:space="preserve">
+    <value>
+  &lt;!-- p&gt;If you're thinking about enrolling your children at La Marelle, please fill in our &lt;/p&gt;
+
+  &lt;p align="center"&gt;&lt;a href="Registration.aspx#form"&gt;&lt;strong&gt;Online enrollment form&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;It doesn't commit you to anything but means that we can respond to your queries more easily by telling us how old your children are and where you live.&lt;/p --&gt;
+
+
+  &lt;p&gt;&lt;b&gt;Note: registrations are temporarily suspended due to oversubscription. Please contact us in January 2016 to see if there are places then.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;For any questions, please fill in the following form and we will be in touch as soon as possible:&lt;/p&gt;
+  </value>
   </data>
-  <data name="fraTitle.Text" xml:space="preserve">
-    <value>Petite École Française</value>
+  <data name="lblComment.Text" xml:space="preserve">
+    <value>Comments:</value>
   </data>
-  <data name="FrenchLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>Your Email:</value>
   </data>
-  <data name="FrenchTitleLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lblNom.Text" xml:space="preserve">
+    <value>Your name:</value>
   </data>
-  <data name="FrenchTitleLabelResource2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="litTitle.Text" xml:space="preserve">
+    <value>Contact Us</value>
   </data>
-  <data name="lead.Text" xml:space="preserve">
-    <value>La Marelle is a French school based in Dartford in North-West Kent (registered charity number &lt;a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&amp;SubsidiaryNumber=0"&gt;1135186&lt;/a&gt;).
-          We offer French-language lessons and activities on &lt;b&gt;Saturday mornings&lt;/b&gt; between 9.30 and 12.30 at &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="View our exact location on Google Maps"&gt;Fleetdown Primary School, Lunedale Road&lt;/a&gt;.</value>
+  <data name="Page.Title" xml:space="preserve">
+    <value>La Marelle - Contact Us</value>
   </data>
-  <data name="moreInfo.Text" xml:space="preserve">
-    <value>More details »</value>
+  <data name="commentRequired.ErrorMessage" xml:space="preserve">
+    <value>Please enter a message</value>
   </data>
-  <data name="moreInfo.ToolTip" xml:space="preserve">
-    <value>View more information</value>
+  <data name="emailRequired.ErrorMessage" xml:space="preserve">
+    <value>Please enter your email address</value>
   </data>
-  <data name="PageResource1.Title" xml:space="preserve">
-    <value>La Marelle - Dartford's French School</value>
-  </data>
-  <data name="latestNews.Text" xml:space="preserve">
-    <value>Latest News</value>
+  <data name="nomRequired.ErrorMessage" xml:space="preserve">
+    <value>Please enter your name</value>
   </data>
 </root>

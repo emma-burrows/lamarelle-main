@@ -32,50 +32,60 @@ public partial class en_Default : LocalizedPage
     table.Columns.Add("Title", typeof(string));
     table.Columns.Add("Description", typeof(string));
 
-    WebRequest request = WebRequest.Create("http://blog.lamarelle.org.uk/feeds/posts/default");
-    request.Timeout = 500;
-
-    using (WebResponse response = request.GetResponse())
-    using (XmlReader reader = XmlReader.Create(response.GetResponseStream()))
+    try
     {
-      List<SyndicationItem> newItems = new List<SyndicationItem>();
-      SyndicationFeed feed = SyndicationFeed.Load(reader);
-      SyndicationCategory lookingFor = new SyndicationCategory("news");
+      WebRequest request = WebRequest.Create("http://blog.lamarelle.org.uk/feeds/posts/default");
+      request.Timeout = 500;
 
-      if (feed != null)
+      using (WebResponse response = request.GetResponse())
+      using (XmlReader reader = XmlReader.Create(response.GetResponseStream()))
       {
-        foreach (SyndicationItem item in feed.Items)
+        List<SyndicationItem> newItems = new List<SyndicationItem>();
+        SyndicationFeed feed = SyndicationFeed.Load(reader);
+        SyndicationCategory lookingFor = new SyndicationCategory("news");
+
+        if (feed != null)
         {
-          foreach (SyndicationCategory sc in item.Categories)
+          foreach (SyndicationItem item in feed.Items)
           {
-            if (sc.Name == lookingFor.Name)
+            foreach (SyndicationCategory sc in item.Categories)
             {
-              newItems.Add(item);
+              if (sc.Name == lookingFor.Name)
+              {
+                newItems.Add(item);
+              }
             }
           }
         }
-      }
 
-      if (newItems.Count > 0)
-      {
-        foreach (SyndicationItem item in newItems.Take(5))
+        if (newItems.Count > 0)
         {
-          DataRow row = table.NewRow();
+          foreach (SyndicationItem item in newItems.Take(3))
+          {
+            DataRow row = table.NewRow();
 
-          row["URL"] = item.Links.Where(l => l.RelationshipType == "alternate").FirstOrDefault().Uri.ToString();;
-          row["Title"] = item.Title.Text;
-          TextSyndicationContent tsc = (TextSyndicationContent)item.Content;
-          row["Description"] = tsc.Text;
-          table.Rows.Add(row);
+            row["URL"] = item.Links.Where(l => l.RelationshipType == "alternate").FirstOrDefault().Uri.ToString();;
+            row["Title"] = item.Title.Text;
+            TextSyndicationContent tsc = (TextSyndicationContent)item.Content;
+            row["Description"] = tsc.Text;
+            table.Rows.Add(row);
+          }
         }
+
+        FormView1.DataSource = dsItems;
+        FormView1.DataBind();
       }
+    }
+    catch (System.Net.WebException we)
+    {
+      DataRow row = table.NewRow();
 
-
+      row["URL"] = "http://blog.lamarelle.org.uk/";
+      row["Title"] = "See further information on Blogger.";
+      row["Description"] = "";
+      table.Rows.Add(row);
       FormView1.DataSource = dsItems;
       FormView1.DataBind();
-
     }
-
-    string Lang = Utils.getLanguage();
   }
 }

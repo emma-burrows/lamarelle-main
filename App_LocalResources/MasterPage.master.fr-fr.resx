@@ -154,4 +154,13 @@
     <value>(c) 2008-2014 La Marelle. Association à but non-lucratif enregistrée au Royaume-Uni (n° 1135186). Drapeaux fournis par &lt;a href="http://jacorre.com"&gt;jacorre.com&lt;/a&gt;. 
               Site hébergé par &lt;a href="http://www.csnewmedia.co.uk"&gt;CS New Media&lt;/a&gt;, design par &lt;a href="http://www.eburrows.co.uk"&gt;E Burrows&lt;/a&gt;.</value>
   </data>
+  <data name="fleMenu.Text" xml:space="preserve">
+    <value>Français langue étrangère</value>
+  </data>
+  <data name="fraMenu.Text" xml:space="preserve">
+    <value>Enfants francophones</value>
+  </data>
+  <data name="lessonMenu.Text" xml:space="preserve">
+    <value>Leçons</value>
+  </data>
 </root>

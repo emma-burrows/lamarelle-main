@@ -117,42 +117,55 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fleDesc.Text" xml:space="preserve">
-    <value>French classes for non-native speakers from 3 years to GCSE level and beyond.</value>
+  <data name="btnEnvoyer.Text" xml:space="preserve">
+    <value>Envoyer</value>
   </data>
-  <data name="fleTitle.Text" xml:space="preserve">
-    <value>French as a foreign language</value>
+  <data name="btnEnvoyer.ToolTip" xml:space="preserve">
+    <value>Envoyer votre candidature</value>
   </data>
-  <data name="fraDesc.Text" xml:space="preserve">
-    <value>Classes for children from a French-speaking background, with support from the French Embassy's "Plan Ecoles".</value>
+  <data name="commentRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer votre lettre de motivation</value>
   </data>
-  <data name="fraTitle.Text" xml:space="preserve">
-    <value>Petite École Française</value>
+  <data name="CVUpload.ToolTip" xml:space="preserve">
+    <value>Téléchargez votre CV</value>
   </data>
-  <data name="FrenchLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="emailRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer votre adresse email pour que nous puissions vous joindre</value>
   </data>
-  <data name="FrenchTitleLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="intro.Text" xml:space="preserve">
+    <value>&lt;p&gt;La Marelle est une association qui grandit et nous recherchons toujours de nouveaux collaborateurs
+pour organiser nos activités, comme par exemple:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Enseignants et assistant(e)s de langue maternelle française&lt;/li&gt;
+  &lt;li&gt;Bénévoles pour les tâches administratives comme la publicité et les levées de fonds&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Les cours ont lieu les samedi matins à &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
+            title="Voir notre situation géographique sur Google Maps"&gt;Fleetdown Primary School&lt;/a&gt; à Dartford dans le nord-ouest du Kent (à 40 minutes de Londres par train). 
+Nous faisons cours 30 samedi par an.&lt;/p&gt; 
+ &lt;p&gt;
+Pour plus d'information, veuillez nous envoyer un CV (format Word ou PDF seulement) avec lettre de motivation en français en utilisant le formulaire ci-dessous:&lt;/p&gt;</value>
   </data>
-  <data name="FrenchTitleLabelResource2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="Label.Text" xml:space="preserve">
+    <value>Votre CV (Word ou PDF seulement, svp):</value>
   </data>
-  <data name="lead.Text" xml:space="preserve">
-    <value>La Marelle is a French school based in Dartford in North-West Kent (registered charity number &lt;a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&amp;SubsidiaryNumber=0"&gt;1135186&lt;/a&gt;).
-          We offer French-language lessons and activities on &lt;b&gt;Saturday mornings&lt;/b&gt; between 9.30 and 12.30 at &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="View our exact location on Google Maps"&gt;Fleetdown Primary School, Lunedale Road&lt;/a&gt;.</value>
+  <data name="lblComment.Text" xml:space="preserve">
+    <value>Pourquoi aimeriez-vous travailler à La Marelle?</value>
   </data>
-  <data name="moreInfo.Text" xml:space="preserve">
-    <value>More details »</value>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>Votre adresse email :</value>
   </data>
-  <data name="moreInfo.ToolTip" xml:space="preserve">
-    <value>View more information</value>
+  <data name="lblNom.Text" xml:space="preserve">
+    <value>Votre nom :</value>
   </data>
-  <data name="PageResource1.Title" xml:space="preserve">
-    <value>La Marelle - Dartford's French School</value>
+  <data name="litTitle.Text" xml:space="preserve">
+    <value>Emplois à La Marelle</value>
   </data>
-  <data name="latestNews.Text" xml:space="preserve">
-    <value>Latest News</value>
+  <data name="nomRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer votre nom</value>
+  </data>
+  <data name="Page.Title" xml:space="preserve">
+    <value>La Marelle - Emplois</value>
   </data>
 </root>

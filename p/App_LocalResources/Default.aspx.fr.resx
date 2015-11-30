@@ -136,15 +136,6 @@
   <data name="fraTitle.Text" xml:space="preserve">
     <value>Petite École Française</value>
   </data>
-  <data name="FrenchLabelResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FrenchTitleLabelResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FrenchTitleLabelResource2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
   <data name="latestNews.Text" xml:space="preserve">
     <value>Dernières nouvelles</value>
   </data>

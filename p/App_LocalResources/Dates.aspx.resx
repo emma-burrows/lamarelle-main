@@ -117,42 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fleDesc.Text" xml:space="preserve">
-    <value>French classes for non-native speakers from 3 years to GCSE level and beyond.</value>
+  <data name="intro.Text" xml:space="preserve">
+    <value>&lt;p&gt;Unless otherwise specified, all lessons take place on Saturday mornings between 9.30 and 12.30 at &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
+          title="View our exact location on Google Maps"&gt;Fleetdown Primary School&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Here are the dates for the next few months:&lt;/p&gt;</value>
   </data>
-  <data name="fleTitle.Text" xml:space="preserve">
-    <value>French as a foreign language</value>
+  <data name="litTitle.Text" xml:space="preserve">
+    <value>Lesson Dates</value>
   </data>
-  <data name="fraDesc.Text" xml:space="preserve">
-    <value>Classes for children from a French-speaking background, with support from the French Embassy's "Plan Ecoles".</value>
-  </data>
-  <data name="fraTitle.Text" xml:space="preserve">
-    <value>Petite École Française</value>
-  </data>
-  <data name="FrenchLabelResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FrenchTitleLabelResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FrenchTitleLabelResource2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lead.Text" xml:space="preserve">
-    <value>La Marelle is a French school based in Dartford in North-West Kent (registered charity number &lt;a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&amp;SubsidiaryNumber=0"&gt;1135186&lt;/a&gt;).
-          We offer French-language lessons and activities on &lt;b&gt;Saturday mornings&lt;/b&gt; between 9.30 and 12.30 at &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="View our exact location on Google Maps"&gt;Fleetdown Primary School, Lunedale Road&lt;/a&gt;.</value>
-  </data>
-  <data name="moreInfo.Text" xml:space="preserve">
-    <value>More details »</value>
-  </data>
-  <data name="moreInfo.ToolTip" xml:space="preserve">
-    <value>View more information</value>
-  </data>
-  <data name="PageResource1.Title" xml:space="preserve">
-    <value>La Marelle - Dartford's French School</value>
-  </data>
-  <data name="latestNews.Text" xml:space="preserve">
-    <value>Latest News</value>
+  <data name="PageRes.Title" xml:space="preserve">
+    <value>La Marelle - Lesson dates</value>
   </data>
 </root>

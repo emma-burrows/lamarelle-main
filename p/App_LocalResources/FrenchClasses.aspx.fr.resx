@@ -117,42 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fleDesc.Text" xml:space="preserve">
-    <value>French classes for non-native speakers from 3 years to GCSE level and beyond.</value>
+  <data name="age.Text" xml:space="preserve">
+    <value>Tranche d'âge</value>
   </data>
-  <data name="fleTitle.Text" xml:space="preserve">
-    <value>French as a foreign language</value>
+  <data name="childrenIntro.Text" xml:space="preserve">
+    <value>&lt;p&gt;La Marelle propose des cours de 1 ou 3 heures adaptés aux enfants anglophones au niveau maternelle, primaire et secondaire sans connaissance du français ou ayant un français faible. L'approche ludique leur donne une introduction à la langue française qui préparera ou complémentera leur apprentissage à l'école secondaire.&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+      &lt;p&gt;Veuillez &lt;a href="Registration.aspx"&gt;remplir notre fiche d'inscription&lt;/a&gt; si vous souhaitez que vos enfants suivent des cours de français langue étrangère.&lt;/p&gt;</value>
   </data>
-  <data name="fraDesc.Text" xml:space="preserve">
-    <value>Classes for children from a French-speaking background, with support from the French Embassy's "Plan Ecoles".</value>
+  <data name="childrenTitle.Text" xml:space="preserve">
+    <value>Cours pour Enfants</value>
   </data>
-  <data name="fraTitle.Text" xml:space="preserve">
-    <value>Petite École Française</value>
+  <data name="classes.Text" xml:space="preserve">
+    <value>Classes</value>
   </data>
-  <data name="FrenchLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="gcseIntro.Text" xml:space="preserve">
+    <value>&lt;p&gt;La Marelle offre des cours de préparation au GCSE français. Les thèmes de l'examen sont étudiés en profondeur, ainsi que la grammaire. Les étudiants bénéficient en plus de l'aide individuelle d'une assistante pour mieux travailler leur oral. Les étudiants sont évalués trois fois dans l'année. L'examen peut également être passé plus tôt dans un centre indépendant.&lt;/p&gt;</value>
   </data>
-  <data name="FrenchTitleLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="gcseTitle.Text" xml:space="preserve">
+    <value>Préparation pour le GCSE</value>
   </data>
-  <data name="FrenchTitleLabelResource2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="hour.Text" xml:space="preserve">
+    <value>heure</value>
   </data>
-  <data name="lead.Text" xml:space="preserve">
-    <value>La Marelle is a French school based in Dartford in North-West Kent (registered charity number &lt;a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&amp;SubsidiaryNumber=0"&gt;1135186&lt;/a&gt;).
-          We offer French-language lessons and activities on &lt;b&gt;Saturday mornings&lt;/b&gt; between 9.30 and 12.30 at &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="View our exact location on Google Maps"&gt;Fleetdown Primary School, Lunedale Road&lt;/a&gt;.</value>
+  <data name="intro.Text" xml:space="preserve">
+    <value>&lt;p&gt;En plus de son école francophone, La Marelle propose des cours du samedi ouverts aux anglophones. Tous les cours sont enseignés par des enseignants de langue maternelle française.&lt;/p&gt;</value>
   </data>
-  <data name="moreInfo.Text" xml:space="preserve">
-    <value>More details »</value>
-  </data>
-  <data name="moreInfo.ToolTip" xml:space="preserve">
-    <value>View more information</value>
+  <data name="litTitle.Text" xml:space="preserve">
+    <value>Cours de français langue étrangère</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>La Marelle - Dartford's French School</value>
+    <value>La Marelle - Français langue étrangère</value>
   </data>
-  <data name="latestNews.Text" xml:space="preserve">
-    <value>Latest News</value>
+  <data name="privateIntro.Text" xml:space="preserve">
+    <value>&lt;p&gt;Certains de nos enseignants proposent également des cours particuliers pour enfants et des cours de conversation pour adultes, veuillez &lt;a href="Contact.aspx"&gt;nous contacter&lt;/a&gt; à ce sujet.&lt;/p&gt;</value>
+  </data>
+  <data name="privateTitle.Text" xml:space="preserve">
+    <value>Cours privés</value>
+  </data>
+  <data name="teacher.Text" xml:space="preserve">
+    <value>Enseignant(e)</value>
+  </data>
+  <data name="time.Text" xml:space="preserve">
+    <value>Horaires</value>
+  </data>
+  <data name="years.Text" xml:space="preserve">
+    <value>ans</value>
   </data>
 </root>

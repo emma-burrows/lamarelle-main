@@ -117,42 +117,86 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fleDesc.Text" xml:space="preserve">
-    <value>French classes for non-native speakers from 3 years to GCSE level and beyond.</value>
+  <data name="ecBlurb.Text" xml:space="preserve">
+    <value>La petite nouvelle, créée à Bromley en 2012 pour servir les enfants du sud de Londres et du Surrey</value>
   </data>
-  <data name="fleTitle.Text" xml:space="preserve">
-    <value>French as a foreign language</value>
+  <data name="ecTitle.Text" xml:space="preserve">
+    <value>Ecole Tricolore</value>
   </data>
-  <data name="fraDesc.Text" xml:space="preserve">
-    <value>Classes for children from a French-speaking background, with support from the French Embassy's "Plan Ecoles".</value>
+  <data name="iagBlurb.Text" xml:space="preserve">
+    <value>Une nouvelle école secondaire avec un accent sur les langues, créée par les parents de la région de Greenwich.</value>
   </data>
-  <data name="fraTitle.Text" xml:space="preserve">
-    <value>Petite École Française</value>
+  <data name="iagTitle.Text" xml:space="preserve">
+    <value>International Academy of Greenwich</value>
   </data>
-  <data name="FrenchLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lapinsBlurb.Text" xml:space="preserve">
+    <value>Créé par des parents de la région de Maidstone, le site contient des informations sur les événements qui se déroulent dans tout le Kent. C'est également un lieu de rencontre et de conversation pour les internautes francophones. Vous devez vous enregistrer pour lire et répondre aux messages.</value>
   </data>
-  <data name="FrenchTitleLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="lapinsTitle.Text" xml:space="preserve">
+    <value>Forum des Petits Lapins</value>
   </data>
-  <data name="FrenchTitleLabelResource2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="litTitle.Text" xml:space="preserve">
+    <value>Nos amis et partenaires</value>
   </data>
-  <data name="lead.Text" xml:space="preserve">
-    <value>La Marelle is a French school based in Dartford in North-West Kent (registered charity number &lt;a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&amp;SubsidiaryNumber=0"&gt;1135186&lt;/a&gt;).
-          We offer French-language lessons and activities on &lt;b&gt;Saturday mornings&lt;/b&gt; between 9.30 and 12.30 at &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="View our exact location on Google Maps"&gt;Fleetdown Primary School, Lunedale Road&lt;/a&gt;.</value>
+  <data name="maskaradeBlurb.Text" xml:space="preserve">
+    <value>Apprenez le français avec Maskarade Languages. Pour les enfants de la maternelle à la primaire, un apprentissage du français (FLE) ludique et motivant!</value>
   </data>
-  <data name="moreInfo.Text" xml:space="preserve">
-    <value>More details »</value>
+  <data name="maskaradeTitle.Text" xml:space="preserve">
+    <value>Maskarade Languages</value>
   </data>
-  <data name="moreInfo.ToolTip" xml:space="preserve">
-    <value>View more information</value>
+  <data name="multilingualBlurb.Text" xml:space="preserve">
+    <value>Un site qui vise à aider les parents qui parlent plusieurs langues à échanger leurs expériences et leurs conseils pour élever des enfants multilingues.</value>
   </data>
-  <data name="PageResource1.Title" xml:space="preserve">
-    <value>La Marelle - Dartford's French School</value>
+  <data name="multilingualTitle.Text" xml:space="preserve">
+    <value>Multilingual Family</value>
   </data>
-  <data name="latestNews.Text" xml:space="preserve">
-    <value>Latest News</value>
+  <data name="PageRes.Title" xml:space="preserve">
+    <value>La Marelle - Liens</value>
+  </data>
+  <data name="peeBlurb.Text" xml:space="preserve">
+    <value>Créée en 1986, la Petite Ecole d'Ealing est la doyenne des écoles du samedi au Royaume-Uni.</value>
+  </data>
+  <data name="peeTitle.Text" xml:space="preserve">
+    <value>Petite Ecole d'Ealing</value>
+  </data>
+  <data name="pekBlurb.Text" xml:space="preserve">
+    <value>La Petite Ecole Kentoise est née un peu avant La Marelle, et a deux antennes, proches de Maidstone et Tonbridge respectivement.</value>
+  </data>
+  <data name="pekTitle.Text" xml:space="preserve">
+    <value>Petite Ecole Kentoise</value>
+  </data>
+  <data name="planEcoleBlurb.Text" xml:space="preserve">
+    <value>Ce projet de l'Ambassade de France vise à développer l'offre d'enseignement de la
+langue et de la culture françaises au Royaume-Uni, entre autres en aidant la création de sections bilingues dans les écoles anglaises, et en fédérant les petites écoles comme La Marelle.</value>
+  </data>
+  <data name="planEcoleTitle.Text" xml:space="preserve">
+    <value>Plan Ecole de l'Ambassade de France</value>
+  </data>
+  <data name="avenueBlurb.Text" xml:space="preserve">
+    <value>Géré par l'Ambassade de France, le site AvenueDesEcoles rassemble des informations officielles sur les écoles et les parcours scolaires francophones à Londres.</value>
+  </data>
+  <data name="avenueTitle.Text" xml:space="preserve">
+    <value>Avenue des Écoles</value>
+  </data>
+  <data name="bromleyBlurb.Text" xml:space="preserve">
+    <value>Cette école primaire à Bromley offrira une éducation bilingue français-anglais aux enfants de 4 à 11 ans. L'école commencera avec deux classes de Reception et, selon la demande, une ou deux classes de Year 1 et Year 2. Son modèle d'immersion précoce bilingue et ses bases academiques solides encourageront l'excellence et offriront un cursus pédagogique large et équilibré.</value>
+  </data>
+  <data name="bromleyTitle.Text" xml:space="preserve">
+    <value>École bilingue de Bromley</value>
+  </data>
+  <data name="Misc.Text" xml:space="preserve">
+    <value>Autres sites</value>
+  </data>
+  <data name="Official.Text" xml:space="preserve">
+    <value>Sites officiels</value>
+  </data>
+  <data name="Other.Text" xml:space="preserve">
+    <value>Autres écoles françaises</value>
+  </data>
+  <data name="parapluieBlurb.Text" xml:space="preserve">
+    <value>Parapluie FLAM est l'organisme parapluie qui conseille et soutient les écoles francophones gérées par des parents au Royaume-Uni.</value>
+  </data>
+  <data name="parapluieTitle.Text" xml:space="preserve">
+    <value>Parapluie FLAM</value>
   </data>
 </root>

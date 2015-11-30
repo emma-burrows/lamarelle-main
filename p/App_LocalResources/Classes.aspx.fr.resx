@@ -117,42 +117,96 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fleDesc.Text" xml:space="preserve">
-    <value>French classes for non-native speakers from 3 years to GCSE level and beyond.</value>
+  <data name="abeillesTitle.Text" xml:space="preserve">
+    <value>Abeilles - 4 ans</value>
   </data>
-  <data name="fleTitle.Text" xml:space="preserve">
-    <value>French as a foreign language</value>
+  <data name="boChIntro.Text" xml:space="preserve">
+    <value>&lt;p&gt;
+      La maîtrise de la langue orale restera la partie la plus importante de la leçon
+      (développement de la communication et de la structuration du langage) à laquelle
+      se rajoutera une acquisition d’un vocabulaire plus étendu autour des thèmes de la
+      découverte du monde (espace, temps et vivant). La lecture se préparera avec l'étude
+      de l'alphabet et de lettres/sons tandis que l'écriture se développera par la pratique
+      de tracés, courbes et copie de mots familiers.&lt;/p&gt;</value>
   </data>
-  <data name="fraDesc.Text" xml:space="preserve">
-    <value>Classes for children from a French-speaking background, with support from the French Embassy's "Plan Ecoles".</value>
+  <data name="bourdonsTitle.Text" xml:space="preserve">
+    <value>Bourdons - 5 ans</value>
   </data>
-  <data name="fraTitle.Text" xml:space="preserve">
-    <value>Petite École Française</value>
+  <data name="chenillesTitle.Text" xml:space="preserve">
+    <value>Chenilles - 6 ans</value>
   </data>
-  <data name="FrenchLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="coAbIntro.Text" xml:space="preserve">
+    <value>&lt;p&gt;
+      Dans ces deux classes, l'accent sera mis sur l'appropriation de la langue orale par des jeux, comptines,
+      chansons, récitations, danses, histoires lues etc...tandis que des activités manuelles
+      (dessin &amp;amp; coloriage) sur les thèmes de la découverte du monde développeront
+      chez l'élève le graphisme et l'écriture.&lt;/p&gt;</value>
   </data>
-  <data name="FrenchTitleLabelResource1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="coccinellesTitle.Text" xml:space="preserve">
+    <value>Coccinelles - 3 ans</value>
   </data>
-  <data name="FrenchTitleLabelResource2.ToolTip" xml:space="preserve">
-    <value />
+  <data name="currIntro.Text" xml:space="preserve">
+    <value>     
+      &lt;p&gt;Les séances sont enseignées en langue française uniquement par des institutrices françaises. La récréation de 20 minutes est également animée par des jeux en français.&lt;/p&gt;
+      
+  &lt;p&gt;
+      Les cours suivent le programme français des écoles maternelles et primaires,
+      adapté à une session hebdomadaire et aux besoins spécifiques d'élèves bilingues.&lt;/p&gt;</value>
   </data>
-  <data name="lead.Text" xml:space="preserve">
-    <value>La Marelle is a French school based in Dartford in North-West Kent (registered charity number &lt;a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&amp;SubsidiaryNumber=0"&gt;1135186&lt;/a&gt;).
-          We offer French-language lessons and activities on &lt;b&gt;Saturday mornings&lt;/b&gt; between 9.30 and 12.30 at &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="View our exact location on Google Maps"&gt;Fleetdown Primary School, Lunedale Road&lt;/a&gt;.</value>
+  <data name="currTitle.Text" xml:space="preserve">
+    <value>Programme pédagogique</value>
   </data>
-  <data name="moreInfo.Text" xml:space="preserve">
-    <value>More details »</value>
+  <data name="endBlurb.Text" xml:space="preserve">
+    <value>&lt;p&gt;
+      Dans tous ces niveaux, des éléments de l'histoire, de la géographie et de la culture
+      françaises et francophones seront abordés et les fêtes du calendrier français seront
+      toujours l'occasion de célébrations et de réjouissances.
+    &lt;/p&gt;</value>
   </data>
-  <data name="moreInfo.ToolTip" xml:space="preserve">
-    <value>View more information</value>
+  <data name="fourmisIntro.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;
+      An advanced and educative creche aimed at 2-year-olds with sessions structured by theme, combining arts and crafts, drawing and coloring, nursery rhymes and a story to end each session. The ultimate aim is to get the children into a routine and help them become comfortable being part of a group, which will lead to good learning and independence.&lt;/p&gt;
+  </value>
+  </data>
+  <data name="fourmisTitle.Text" xml:space="preserve">
+    <value>Fourmis - 2 ans</value>
+  </data>
+  <data name="intro.Text" xml:space="preserve">
+    <value>&lt;p&gt;Cette page concerne l'école pour enfants francophones. Veuillez voir notre page &lt;a href="FrenchClasses.aspx"&gt;sur les cours de français language étrangère&lt;/a&gt; si vous cherchez à apprendre le français. Sauf indication contraire, tous les cours ont lieu le samedi matin entre 9h30 et 12h30 à &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
+            title="Voir notre situation géographique sur Google Maps"&gt;Fleetdown Primary School&lt;/a&gt;, Lunedale Road, DA2 6JX (consulter &lt;a href="Dates.aspx"&gt;notre calendrier&lt;/a&gt; pour les dates exactes).&lt;/p&gt;</value>
+  </data>
+  <data name="libellules1Title.Text" xml:space="preserve">
+    <value>Libellules 1 - 8 à 9 ans</value>
+  </data>
+  <data name="liLuIntro.Text" xml:space="preserve">
+    <value>&lt;p&gt;L'expression orale sera encore développée, et les élèves consolideront leur maîtrise des règles de base de la grammaire française grâce aux exercices de grammaire, conjugaison et orthographe. L'étude d'œuvres complètes
+        enrichira le vocabulaire et l'expression écrite de l'élève, et la créativité de leur expression sera encouragée.&lt;/p&gt;</value>
+  </data>
+  <data name="litTitle.Text" xml:space="preserve">
+    <value>École pour enfants francophones</value>
+  </data>
+  <data name="luciolesTitle.Text" xml:space="preserve">
+    <value>Lucioles - 12 à 15 ans</value>
   </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>La Marelle - Dartford's French School</value>
+    <value>La Marelle - École pour enfants francophones</value>
   </data>
-  <data name="latestNews.Text" xml:space="preserve">
-    <value>Latest News</value>
+  <data name="paIntro.Text" xml:space="preserve">
+    <value>&lt;p&gt;Une fois les rudiments de la lecture acquis à l'école
+        anglaise, la lecture en français se développera facilement dans ce niveau par sa
+        pratique régulière durant la session et aussi à la maison avec les parents. En plus des activités orales, les
+        règles de base de la langue française seront étudiées systématiquement avec des exercices
+        de grammaire, conjugaison et d'orthographe tandis que la lecture de textes courts et romans
+        enrichira le vocabulaire et l'expression écrite de l'élève.&lt;/p&gt;</value>
+  </data>
+  <data name="papillonsTitle.Text" xml:space="preserve">
+    <value>Papillons - 7 à 9 ans</value>
+  </data>
+  <data name="teacher.Text" xml:space="preserve">
+    <value>Enseignant(e)&amp;nbsp;</value>
+  </data>
+  <data name="libellules2Title.Text" xml:space="preserve">
+    <value>Libellules 2 - 10 à 11 ans</value>
   </data>
 </root>

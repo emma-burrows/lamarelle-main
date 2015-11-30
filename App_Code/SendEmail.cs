@@ -6,6 +6,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Net.Mime;
 using System.Text;
+using System.Threading;
 using System.Web;
 using System.Web.Configuration;
 
@@ -26,7 +27,7 @@ public static class  SendEmail
   {
     String message;
     String servername = HttpContext.Current.Request.Url.Host;
-    String lang = Utils.getLanguage();
+    String lang = Thread.CurrentThread.CurrentCulture.TwoLetterISOLanguageName;
 
     try
     {

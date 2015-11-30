@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="abilityLblResource1.Text" xml:space="preserve">
+    <value>Niveau du français des enfants&amp;nbsp;:</value>
+  </data>
+  <data name="adresseLbl.Text" xml:space="preserve">
+    <value>Adresse complète où habitent les enfants&amp;nbsp;:</value>
+  </data>
+  <data name="adresseRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer une adresse complète avec code postal et ville</value>
+  </data>
+  <data name="bilinguismeFLE.Text" xml:space="preserve">
+    <value>Non-francophones (Français langue étrangère)</value>
+  </data>
+  <data name="bilinguismeFLE.Value" xml:space="preserve">
+    <value>Cherche cours FLE</value>
+  </data>
+  <data name="bilinguismeFrancophone.Text" xml:space="preserve">
+    <value>Parent(s) francophone(s)</value>
+  </data>
+  <data name="bilinguismeFrancophone.Value" xml:space="preserve">
+    <value>Parent(s) francophone(s)</value>
+  </data>
+  <data name="bilinguismeLblResource1.Text" xml:space="preserve">
+    <value>Connexion avec la langue française&amp;nbsp;:</value>
+  </data>
+  <data name="bilinguismeSejour.Text" xml:space="preserve">
+    <value>Séjour prolongé dans un pays francophone</value>
+  </data>
+  <data name="bilinguismeSejour.Value" xml:space="preserve">
+    <value>Sejour prolonge dans pays francophone</value>
+  </data>
+  <data name="btnEnvoyer.Text" xml:space="preserve">
+    <value>Envoyer</value>
+  </data>
+  <data name="btnEnvoyer.ToolTip" xml:space="preserve">
+    <value>Envoyer la fiche d'inscription</value>
+  </data>
+  <data name="childrenTitleResource1.Text" xml:space="preserve">
+    <value>Vos enfants</value>
+  </data>
+  <data name="contactTitleResource1.Text" xml:space="preserve">
+    <value>Vos coordonnées</value>
+  </data>
+  <data name="dateLbl.Text" xml:space="preserve">
+    <value>Date de naissance&amp;nbsp;:</value>
+  </data>
+  <data name="emailLbl.Text" xml:space="preserve">
+    <value>Votre adresse email&amp;nbsp;:</value>
+  </data>
+  <data name="emailRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer une adresse email</value>
+  </data>
+  <data name="emailValid.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer une adresse email valable pour que nous puissions vous contacter</value>
+  </data>
+  <data name="enfant1Lbl.Text" xml:space="preserve">
+    <value>Enfant 1</value>
+  </data>
+  <data name="enfant2Lbl.Text" xml:space="preserve">
+    <value>Enfant 2</value>
+  </data>
+  <data name="enfant3Lbl.Text" xml:space="preserve">
+    <value>Enfant 3</value>
+  </data>
+  <data name="furtherInfoResource1.Text" xml:space="preserve">
+    <value>Informations complémentaires sur votre famille</value>
+  </data>
+  <data name="introResource1.Text" xml:space="preserve">
+    <value>
+  &lt;p&gt;Pour inscrire vos enfants ou recevoir plus d'informations, veuillez remplir le questionnaire suivant et nous vous contacterons rapidement. Note&amp;nbsp;: les champs marqués d'un astérisque * sont obligatoires.&lt;/p&gt;</value>
+  </data>
+  <data name="languagesLbl.Text" xml:space="preserve">
+    <value>Langues parlées à la maison&amp;nbsp;:</value>
+  </data>
+  <data name="lblComment.Text" xml:space="preserve">
+    <value>Commentaires&amp;nbsp;:</value>
+  </data>
+  <data name="lblNationalite.Text" xml:space="preserve">
+    <value>Nationalité&amp;nbsp;:</value>
+  </data>
+  <data name="litTitleResource1.Text" xml:space="preserve">
+    <value>Fiche d'inscription</value>
+  </data>
+  <data name="nomLbl.Text" xml:space="preserve">
+    <value>Nom de famille&amp;nbsp;:&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;</value>
+    <comment>Extra spaces to make the field line up with Date de naissance</comment>
+  </data>
+  <data name="nomRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer votre nom de famille</value>
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>La Marelle - Fiche d'inscription</value>
+  </data>
+  <data name="precisions.Text" xml:space="preserve">
+    <value>(préciser ici)</value>
+  </data>
+  <data name="prenomLbl.Text" xml:space="preserve">
+    <value>Prénom&amp;nbsp;:</value>
+  </data>
+  <data name="prenomRequired.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer votre prénom</value>
+  </data>
+  <data name="reading.Text" xml:space="preserve">
+    <value>Lu</value>
+  </data>
+  <data name="reading.Value" xml:space="preserve">
+    <value>Lu</value>
+  </data>
+  <data name="sexeEnfantLbl.Text" xml:space="preserve">
+    <value>Sexe&amp;nbsp;:</value>
+  </data>
+  <data name="sourceAmi.Text" xml:space="preserve">
+    <value>amis ou collègues</value>
+  </data>
+  <data name="sourceAmi.Value" xml:space="preserve">
+    <value>amis ou collègues</value>
+  </data>
+  <data name="sourceBusinessCard.Text" xml:space="preserve">
+    <value>carte de visite</value>
+  </data>
+  <data name="sourceBusinessCard.Value" xml:space="preserve">
+    <value>carte de visite</value>
+  </data>
+  <data name="sourceEmail.Text" xml:space="preserve">
+    <value>email (préciser l'expéditeur)</value>
+  </data>
+  <data name="sourceEmail.Value" xml:space="preserve">
+    <value>email (préciser l'expéditeur)</value>
+  </data>
+  <data name="sourceLbl.Text" xml:space="preserve">
+    <value>Comment avez-vous entendu parler de La Marelle&amp;nbsp;?</value>
+  </data>
+  <data name="sourceOther.Text" xml:space="preserve">
+    <value>autre (veuillez préciser)</value>
+  </data>
+  <data name="sourceOther.Value" xml:space="preserve">
+    <value>autre (veuillez préciser)</value>
+  </data>
+  <data name="sourcePoster.Text" xml:space="preserve">
+    <value>poster (préciser le lieu)</value>
+  </data>
+  <data name="sourcePoster.Value" xml:space="preserve">
+    <value>poster (préciser le lieu)</value>
+  </data>
+  <data name="sourcePress.Text" xml:space="preserve">
+    <value>article dans la presse</value>
+  </data>
+  <data name="sourcePress.Value" xml:space="preserve">
+    <value>article dans la presse</value>
+  </data>
+  <data name="sourceWeb.Text" xml:space="preserve">
+    <value>web (préciser quel site)</value>
+  </data>
+  <data name="sourceWeb.Value" xml:space="preserve">
+    <value>web (préciser quel site)</value>
+  </data>
+  <data name="speaking.Text" xml:space="preserve">
+    <value>Parlé</value>
+  </data>
+  <data name="speaking.Value" xml:space="preserve">
+    <value>Parlé</value>
+  </data>
+  <data name="tel1Lbl.Text" xml:space="preserve">
+    <value>Votre téléphone portable&amp;nbsp;:</value>
+  </data>
+  <data name="tel2Lbl.Text" xml:space="preserve">
+    <value>Votre téléphone fixe ou de bureau&amp;nbsp;:</value>
+  </data>
+  <data name="tel1Required.ErrorMessage" xml:space="preserve">
+    <value>Veuillez entrer un numéro de portable où nous pourrons vous joindre</value>
+  </data>
+  <data name="understanding.Text" xml:space="preserve">
+    <value>Compris</value>
+  </data>
+  <data name="understanding.Value" xml:space="preserve">
+    <value>Compris</value>
+  </data>
+  <data name="writing.Text" xml:space="preserve">
+    <value>Écrit</value>
+  </data>
+  <data name="writing.Value" xml:space="preserve">
+    <value>Écrit</value>
+  </data>
+  <data name="extraMessage.Text" xml:space="preserve">
+    <value>&lt;div class="bg-error"&gt;&lt;p&gt;Le succès de La Marelle auprès des familles de la région continue et nous vous en remercions. &lt;/p&gt;
+&lt;p&gt;Malheureusement, nous sommes maintenant dans l'obligation de ne plus accepter d'élèves à présent. Si vous voulez inscrire votre/vos enfant(s) à La Marelle, veuillez nous contacter à partir de janvier 2016.&lt;/p&gt;
+
+&lt;p&gt;Cordialement&lt;br/&gt;
+L'équipe administrative de La Marelle
+&lt;/p&gt;&lt;/div&gt;</value>
+  </data>
+</root>

@@ -117,42 +117,61 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="fleDesc.Text" xml:space="preserve">
-    <value>French classes for non-native speakers from 3 years to GCSE level and beyond.</value>
+  <data name="age.Text" xml:space="preserve">
+    <value>Age group</value>
   </data>
-  <data name="fleTitle.Text" xml:space="preserve">
+  <data name="childrenIntro.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;La Marelle offers 1- and 3-hour lessons for children of pre-school, primary and secondary school ages. They are a good preparation or complement to French lessons in secondary school and give children confidence in learning a second language.&lt;/p&gt;
+    &lt;p&gt;We teach French through games, songs, stories and crafts while encouraging the children's natural desire for communication with an emphasis on fun. At this age children are ready to reproduce the sounds and accent of the foreign language, which will provide them with good sound linguistic skills.&lt;/p&gt;
+    &lt;p&gt;Please &lt;a href="Registration.aspx"&gt;fill in our registration form&lt;/a&gt; if you would like your children to learn French, specifying their ages and existing knowledge of French.&lt;/p&gt;
+  </value>
+  </data>
+  <data name="childrenTitle.Text" xml:space="preserve">
+    <value>Classes for Children</value>
+  </data>
+  <data name="classes.Text" xml:space="preserve">
+    <value>Classes</value>
+  </data>
+  <data name="gcseIntro.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;La Marelle provides classes to help young people prepare their French GCSE exams. 
+    The grammar and themes covered in the exam are studied in depth and students are helped individually by a teaching assistant to improve their oral skills. Students are tested three times during the year. If required, 
+    the exam can also be taken early in an independent examination centre.&lt;/p&gt;
+  </value>
+  </data>
+  <data name="gcseTitle.Text" xml:space="preserve">
+    <value>Classes for GCSE students</value>
+  </data>
+  <data name="hour.Text" xml:space="preserve">
+    <value>hour</value>
+  </data>
+  <data name="intro.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;In addition to its school for French-speaking children, La Marelle offers Saturday classes for English-speaking students. All sessions are taught by native French-speaking teachers.&lt;/p&gt; 
+  </value>
+  </data>
+  <data name="litTitle.Text" xml:space="preserve">
     <value>French as a foreign language</value>
   </data>
-  <data name="fraDesc.Text" xml:space="preserve">
-    <value>Classes for children from a French-speaking background, with support from the French Embassy's "Plan Ecoles".</value>
-  </data>
-  <data name="fraTitle.Text" xml:space="preserve">
-    <value>Petite École Française</value>
-  </data>
-  <data name="FrenchLabelResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FrenchTitleLabelResource1.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="FrenchTitleLabelResource2.ToolTip" xml:space="preserve">
-    <value />
-  </data>
-  <data name="lead.Text" xml:space="preserve">
-    <value>La Marelle is a French school based in Dartford in North-West Kent (registered charity number &lt;a href="http://charitycommission.gov.uk/Showcharity/RegisterOfCharities/CharityWithoutPartB.aspx?RegisteredCharityNumber=1135186&amp;SubsidiaryNumber=0"&gt;1135186&lt;/a&gt;).
-          We offer French-language lessons and activities on &lt;b&gt;Saturday mornings&lt;/b&gt; between 9.30 and 12.30 at &lt;a href="https://maps.google.co.uk/?q=La+Marelle+DA2+6JX" target="_blank"
-            title="View our exact location on Google Maps"&gt;Fleetdown Primary School, Lunedale Road&lt;/a&gt;.</value>
-  </data>
-  <data name="moreInfo.Text" xml:space="preserve">
-    <value>More details »</value>
-  </data>
-  <data name="moreInfo.ToolTip" xml:space="preserve">
-    <value>View more information</value>
-  </data>
   <data name="PageResource1.Title" xml:space="preserve">
-    <value>La Marelle - Dartford's French School</value>
+    <value>French as a foreign language</value>
   </data>
-  <data name="latestNews.Text" xml:space="preserve">
-    <value>Latest News</value>
+  <data name="privateIntro.Text" xml:space="preserve">
+    <value>
+    &lt;p&gt;Some of our teachers also provide private tuition for children and conversation classes for adults; &lt;a href="Contact.aspx"&gt;please contact us if you are interested&lt;/a&gt;&lt;/p&gt;
+  </value>
+  </data>
+  <data name="privateTitle.Text" xml:space="preserve">
+    <value>Private lessons</value>
+  </data>
+  <data name="teacher.Text" xml:space="preserve">
+    <value>Teacher</value>
+  </data>
+  <data name="time.Text" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="years.Text" xml:space="preserve">
+    <value>years</value>
   </data>
 </root>

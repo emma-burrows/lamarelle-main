@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Web;
 
-public partial class en_Jobs : System.Web.UI.Page
+public partial class en_Jobs : LocalizedPage
 {
   /// <summary>
   /// Compile the contents of the form into an email body.

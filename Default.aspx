@@ -8,12 +8,6 @@
   }
 </script>
 
-<asp:Content ContentPlaceHolderID="MenuPlaceHolder" runat="server">
-
-                  
-</asp:Content>
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
   
 </asp:Content>

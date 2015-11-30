@@ -6,12 +6,45 @@ BODY
   background-color: #000040;
   height: 100%;
 }
-
+/* Bootstrap overrides */
 .container 
 {
   background-color: AliceBlue;
 }
+.nav-pills > li > a 
+{
+    border-radius: 0px;
+}
+.nav > li > a, .nav > li > div.dropdown > a 
+{
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
 
+.nav > li > div.dropdown > a:hover,
+.nav > li > div.dropdown > a:focus
+{
+  text-decoration: none;
+}
+
+.bs-example 
+{
+    background-color: #EEEEFF;
+    border-style: solid;
+    border-color: #DDDDDD;
+    border-radius: 4px 4px 0 0;
+    border-width: 1px;
+    box-shadow: none;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 12px;
+    padding: 15px 15px;
+    position: relative;
+
+}
+
+/* Images */
 #banner
 {
   background-image: url("../Banner.png");
@@ -22,15 +55,42 @@ BODY
   padding: 0;
 }
 
+img, .box
+{
+  padding: 7px;
+  margin: 20px;
+  border-width: thin;
+  vertical-align: top;
+  /* border-style: solid;*/
+  border-radius: 10px;
+  -moz-box-shadow: -2px 2px 16px #898DD7;
+  -webkit-box-shadow: -2px 2px 16px #898DD7;
+  box-shadow: -2px 2px 16px #898DD7;
+}
+
+img, #banner.box
+{
+  padding: 0px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+  img.floated
+  {
+    vertical-align:top; float: left; width: 70px; height: 70px; margin: 5px; margin-right: 20px;
+  }
+
+
+
 .cursif
 {
   font-family: Sacramento, Comic Sans MS, Serif;
   font-size: 2em;
 }
 
-#ctl00_ContentPlaceHolder1_MainText
+#content
 {
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 A
@@ -46,32 +106,27 @@ A:hover
 
 .yellow
 {
-  background-color: #eeeecd;
-  border-color: Yellow;
+  background-color: #F5EFCF;
 }
 
 .blue
 {
-  background-color: AliceBlue;
-  border-color: #0000FF;
+  background-color: #D5EAFF;
 }
 
 .red
 {
-  background-color: #eecdcd;
-  border-color: Red;
+  background-color: #F6D5C6;
 }
 
 .green
 {
-  background-color: #cdeecd;
-  border-color: Green;
+  background-color: #BED9D4;
 }
 
 .purple
 {
-  background-color: #cdcdee;
-  border-color: Purple;
+  background-color: #F7E0E6;
 }
 
 
@@ -116,27 +171,11 @@ P
 {
   margin-top: 0;
 }
-
-
-img, .box
+table#fletable td
 {
-  padding: 7px;
-  margin: 20px;
-  border-width: thin;
   vertical-align: top;
-  /* border-style: solid;*/
-  border-radius: 10px;
-  -moz-box-shadow: -2px 2px 16px #898DD7;
-  -webkit-box-shadow: -2px 2px 16px #898DD7;
-  box-shadow: -2px 2px 16px #898DD7;
 }
 
-img, #banner.box
-{
-  padding: 0px;
-  border: none;
-  margin-bottom: 10px;
-}
 
 .tr-caption
 {

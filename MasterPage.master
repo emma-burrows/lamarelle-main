@@ -3,31 +3,41 @@
 <!DOCTYPE html>
 
 <script runat="server">
-
-  protected void Page_Load(object sender, EventArgs e)
-  {
-    lkEnglish.ImageUrl = ResolveUrl("~/unitedkingdom.gif");
-    lkFrench.ImageUrl = ResolveUrl("~/france.gif");
-  }
+  String lang;
 
   protected void RequestLanguageChange_Click(object sender, EventArgs e)
   {
-    ImageButton senderLink = sender as ImageButton;
 
     //store requested language as new culture in the session
-    Session["LaMarelleLang"] = senderLink.CommandArgument;
+    if (sender is ImageButton) 
+    {
+      ImageButton senderLink = sender as ImageButton;
+      lang = senderLink.CommandArgument;
+    }
+    else
+    {
+      LinkButton senderLink = sender as LinkButton;
+      lang = senderLink.CommandArgument;      
+    }
+
+    Response.Cookies["LaMarelleLang"].Value = lang;
+    Session["LaMarelleLang"] = lang;
 
     //reload last requested page with new culture
-    Server.Transfer(Request.Path);
+    Server.Transfer(Request.Path, false);
   }
 </script>
 
 <html>
   <head runat="server">
-    <title>La Marelle - Petite Ã©cole franÃ§aise de Dartford</title>
-    <link rel="shortcut icon" type="image/x-icon" href="<%= ResolveUrl ("~/favicon.ico") %>" />
-    <link rel="apple-touch-icon" type="image/png" href="<%= ResolveUrl ("~/images/apple-touch-icon.png") %>" />
-
+    <title>La Marelle - Petite école française de Dartford</title>
+    <asp:PlaceHolder runat="server">
+      <link rel="shortcut icon" type="image/x-icon" href="<%= ResolveUrl ("~/favicon.ico") %>" />
+      <link rel="apple-touch-icon" type="image/png" href="<%= ResolveUrl ("~/images/apple-touch-icon.png") %>" />
+      <link href="<%= ResolveUrl ("~/bootstrap/css/bootstrap.min.css") %>" rel="Stylesheet" type="text/css" />
+      <link href="<%= ResolveUrl ("~/css/Menu.css") %>" rel="Stylesheet" type="text/css" />
+      <link rel="stylesheet" media="only screen and (max-width: 992px)" href="<%= ResolveUrl ("~/css/Narrow.css") %>"/>
+    </asp:PlaceHolder>
     <!-- Google Analytics code below -->
     <script type="text/javascript">
 
@@ -43,9 +53,7 @@
 
     </script>
 
-    <link href="<%= ResolveUrl ("~/bootstrap/css/bootstrap.min.css") %>" rel="Stylesheet" type="text/css" />
-    <link href="<%= ResolveUrl ("~/css/Menu.css") %>" rel="Stylesheet" type="text/css" />
-    <link rel="stylesheet" media="only screen and (max-width: 992px)" href="<%= ResolveUrl ("~/css/Narrow.css") %>"/>
+
     <link href='http://fonts.googleapis.com/css?family=Domine|Lobster+Two|Sacramento' rel='stylesheet' type='text/css'/>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -60,36 +68,51 @@
     <form id="form1" height="100%" runat="server">
       <div class="container">
         <div class="header">
-          <div id="bannerdiv" style="width: 100%; height: 140px; position: relative; text-align:center; margin-top: 10px;">
-            <a href="http://www.lamarelle.org.uk"><div id="banner" class="box"></div></a>
-            <div align="left" style="width: 70px; left: 5px; position: absolute; top: 124px">
-              <asp:ImageButton id="lkFrench" runat="server" CssClass="Menu" CommandArgument="fr-FR" OnClick="RequestLanguageChange_Click" meta:resourcekey="lkFrench" /> 
-              <asp:ImageButton ID="lkEnglish" runat="server" CssClass="Menu" CommandArgument="en-GB" OnClick="RequestLanguageChange_Click" meta:resourcekey="lkEnglish" />
+          <div id="bannerdiv" style="width: 100%; height: 150px; position: relative; text-align:center; margin-top: 10px;">
+            <a href="<%= ResolveUrl ("~/p/Default.aspx") %>"><div id="banner" class="box"></div></a>
+            <div align="left" style="width: 200px; left: 5px; position: absolute; top: 124px">
+              <asp:ImageButton id="lkFrench" runat="server" ImageUrl="~/france.gif" ImageAlign="AbsMiddle" CommandArgument="fr-FR" OnClick="RequestLanguageChange_Click" meta:resourcekey="lkFrench"/>
+              <asp:LinkButton id="lbFrench" runat="server" CommandArgument="fr-FR" OnClick="RequestLanguageChange_Click">Français</asp:LinkButton>
+              &nbsp;
+              <asp:ImageButton ID="lkEnglish" runat="server" ImageUrl="~/unitedkingdom.gif" ImageAlign="AbsMiddle" CommandArgument="en-GB" OnClick="RequestLanguageChange_Click" meta:resourcekey="lkEnglish" />
+              <asp:LinkButton id="lbEnglish" runat="server" CommandArgument="en-GB" OnClick="RequestLanguageChange_Click">English</asp:LinkButton>
             </div>
           </div>
 
           <ul class="nav nav-pills nav-justified" id="menu">
             <li class="red menu">
-              <a href="http://lamarelle.org.uk">
+              <a href="Default.aspx">
                 <asp:Literal ID="homeMenu" runat="server" meta:resourcekey="homeMenu" Text="Home"/>
               </a>
             </li>
+            <li class="blue menu">
+              <div class="dropdown" style="text-align: center;">
+                <a href="#" id="lessonDropdown" class="dropdown-toggle" data-toggle="dropdown">
+                  <asp:Literal ID="lessonMenu" runat="server" meta:resourcekey="lessonMenu" Text="Lessons" />
+                  <span class="caret" />
+                </a>
+                <ul class="blue dropdown dropdown-menu" style="text-align: left;" role="menu" aria-labelledby="lessonDropdown">
+                  <li><a href="Classes.aspx"><asp:Literal ID="fraMenu" meta:resourcekey="fraMenu" runat="server" Text="For French-speaking children" /></a></li>
+                  <li><a href="FrenchClasses.aspx"><asp:Literal ID="fleMenu" meta:resourcekey="fleMenu" runat="server" Text="For Beginners" /></a></li>
+                </ul>
+              </div>
+            </li>
             <li class="purple menu">
-              <a href="fees.aspx">
+              <a href="Fees.aspx">
                 <asp:Literal ID="feesMenu" runat="server" meta:resourcekey="feesMenu" Text="Fees"/>
               </a>
             </li>
-            <li class="yellow menu">
+            <li class="green menu">
               <a href="Dates.aspx">
                 <asp:Literal ID="datesMenu" runat="server" meta:resourcekey="datesMenu" Text="Dates"/>
               </a>
             </li>
-            <li class="green menu">
+            <li class="yellow menu">
               <a href="Registration.aspx">
                 <asp:Literal ID="regMenu" runat="server" meta:resourcekey="regMenu" Text="Registration"/>
               </a>
             </li>
-            <li class="yellow menu">
+            <li class="blue menu">
               <a href="Jobs.aspx">
                 <asp:Literal ID="jobsMenu" runat="server" meta:resourcekey="jobsMenu" Text="Jobs"/>
               </a>
@@ -105,20 +128,21 @@
               </a>
             </li>
           </ul>
-          <asp:ContentPlaceHolder id="MenuPlaceHolder" runat="server"></asp:ContentPlaceHolder>
         </div>
 
         <br />
 
         <div class="row row-offcanvas row-offcanvas-right">
-          <div class="col-sm-12 col-md-9">
-            <!-- START CONTENT PLACEHOLDER -->
-            <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
-            </asp:contentplaceholder>
+          <div class="col-sm-12 col-md-8 col-lg-9">
+            <div id="content">
+              <!-- START CONTENT PLACEHOLDER -->
+              <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+              </asp:contentplaceholder>
+            </div>
           </div>
 
           <!-- Right-hand side -->
-          <div id="sidebar" class="col-md-3 hidden-sm sidebar-offcanvas" style="text-align: center">
+          <div id="sidebar" class="col-md-4 col-lg-3 hidden-sm sidebar-offcanvas" style="text-align: center">
             
             <!-- Picture from our first ever PR event -->
             <asp:Image ID="Image1" runat="server" ImageUrl="~/images/groupeassis.JPG" Width="220px" meta:resourcekey="Image1" />
@@ -126,7 +150,7 @@
 
             <!-- Facebook -->
             <p style="text-align: center">
-              <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLa-Marelle%2F112289512183777&amp;width=235&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=580" scrolling="no" frameborder="0" style="color: #CCFFFF; background-color: #ADD6FF; width:235px; height:585px;" allowTransparency="true"></iframe>
+              <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FLa-Marelle%2F112289512183777&amp;width=235&amp;colorscheme=light&amp;show_faces=true&amp;stream=false&amp;header=false&amp;height=680" scrolling="no" frameborder="0" style="color: #CCFFFF; background-color: #D5EAFF; width:235px; height:230px;" allowTransparency="true"></iframe>
             </p>
 		        
             <!-- Old pictures for prettiness -->
@@ -142,6 +166,9 @@
         </footer>
       </div>
     </form>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <asp:PlaceHolder ID="PlaceHolder1" runat="server">
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script type="text/javascript" src="<%= ResolveUrl ("~/bootstrap/js/bootstrap.min.js") %>"></script>
+    </asp:PlaceHolder>
   </body>
 </html>

@@ -126,11 +126,20 @@
   <data name="feesMenu.Text" xml:space="preserve">
     <value>Fees</value>
   </data>
+  <data name="fleMenu.Text" xml:space="preserve">
+    <value>French as a foreign language</value>
+  </data>
+  <data name="fraMenu.Text" xml:space="preserve">
+    <value>French-speaking children</value>
+  </data>
   <data name="homeMenu.Text" xml:space="preserve">
     <value>Home</value>
   </data>
   <data name="jobsMenu.Text" xml:space="preserve">
     <value>Jobs</value>
+  </data>
+  <data name="lessonMenu.Text" xml:space="preserve">
+    <value>Lessons</value>
   </data>
   <data name="linksMenu.Text" xml:space="preserve">
     <value>Links</value>
